@@ -1,4 +1,4 @@
-/*Task_1*/
+/*Prerequisites*/
 create tablespace tbs_lab datafile 'db_lab_001.dat' 
 size 5M autoextend ON next 5M MAXSIZE 100M;
 
@@ -9,7 +9,7 @@ grant resource to ANeveykov;
 grant select on scott.dept to ANeveykov; 
 grant select on scott.emp to ANeveykov; 
 
-/*Task_2*/
+/*Task_1*/
 -- Step 1
 create table t 
   ( a int, 
@@ -50,7 +50,7 @@ drop table t;
 
 /*Task_2*/
 -- Step 1
-Create table t ( x int primary key, y clob, z blob );  
+Create table t ( x int primary key, y clob, z blob )  
 
 -- Step 2
 select segment_name, segment_type from user_segments; 
