@@ -1,3 +1,6 @@
+--ALTER USER my_user IDENTIFIED BY MyNewPassword123;
+--GRANT UNLIMITED TABLESPACE TO <username>;
+
 /*Prerequisites*/
 create tablespace tbs_lab datafile 'db_lab_001.dat' 
 size 5M autoextend ON next 5M MAXSIZE 100M;
@@ -6,8 +9,8 @@ create user ANeveykov identified by 123456 default tablespace tbs_lab;
 
 grant connect to ANeveykov; 
 grant resource to ANeveykov; 
-grant select on scott.dept to ANeveykov; 
-grant select on scott.emp to ANeveykov; 
+--grant select on scott.dept to ANeveykov; 
+--grant select on scott.emp to ANeveykov; 
 
 /*Task_1*/
 -- Step 1
@@ -50,11 +53,12 @@ drop table t;
 
 /*Task_2*/
 -- Step 1
-Create table t ( x int primary key, y clob, z blob )  
+PURGE RECYCLEBIN;
+Create table t ( x int primary key, y clob, z blob );  
 
 -- Step 2
 select segment_name, segment_type from user_segments; 
-
+drop table t;
 -- Step 3
 Create table t 
     ( x int primary key, 
@@ -148,23 +152,28 @@ SELECT empno, 'SCHOOL' , '123 main street' , 'Washington' , 'DC' , 20123 FROM em
 Commit;
 
 -- Step 5
-exec dbms_stats.gather_table_stats(ANeveykov, 'HEAP_ADDRESSES' ); 
-exec dbms_stats.gather_table_stats(ANeveykov, 'IOT_ADDRESSES' ); 
+exec dbms_stats.gather_table_stats(user, 'HEAP_ADDRESSES' ); 
+exec dbms_stats.gather_table_stats(user, 'IOT_ADDRESSES' ); 
 
 -- Step 6
+SET AUTOTRACE OFF
+set autotrace traceonly
+
+explain plan for
 SELECT * 
    FROM emp , 
         heap_addresses 
   WHERE emp.empno = heap_addresses.empno 
   AND emp.empno   = 42;
+select * from table(dbms_xplan.display );
 
-
+explain plan for
 SELECT * 
    FROM emp , 
         iot_addresses 
   WHERE emp.empno = iot_addresses.empno 
   AND emp.empno   = 42;
-  
+select * from table(dbms_xplan.display );
 -- Step 7
 drop table iot_addresses; 
 drop table heap_addresses; 
@@ -203,15 +212,15 @@ CREATE TABLE dept
   cluster emp_dept_cluster ( deptno ) ;
 
 -- Step 4
-INSERT INTO dept( deptno , dname , loc) 
+INSERT INTO dept( deptno , dname , loc); 
 SELECT deptno , dname , loc 
-   FROM scott.dept; 
+   FROM dept; 
     
 commit; 
  
  INSERT INTO emp ( empno, ename, job, mgr, hiredate, sal, comm, deptno ) 
  SELECT rownum, ename, job, mgr, hiredate, sal, comm, deptno 
-   FROM scott.emp 
+   FROM emp 
        
 commit; 
 
