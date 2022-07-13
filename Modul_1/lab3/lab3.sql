@@ -5,19 +5,22 @@
 create tablespace tbs_lab datafile 'db_lab_001.dat' 
 size 5M autoextend ON next 5M MAXSIZE 100M;
 
-create user ANeveykov identified by 123456 default tablespace tbs_lab; 
+create user scott identified by 123456; 
 
-grant connect to ANeveykov; 
-grant resource to ANeveykov; 
---grant select on scott.dept to ANeveykov; 
---grant select on scott.emp to ANeveykov; 
+grant connect to scott; 
+grant resource to scott; 
+
+GRANT UNLIMITED TABLESPACE TO scott;
+
+grant select on scott.dept to ANeveykov; 
+grant select on scott.emp to ANeveykov; 
 
 /*Task_1*/
 -- Step 1
 create table t 
   ( a int, 
-    b varchar2(4000) default rpad('*',4000,'*'), 
-    c varchar2(3000) default rpad('*',3000,'*') 
+    b varchar2(4000) default rpad('*',4000,'*'), --Поиграть с циферками
+    c varchar2(4000) default rpad('*',4000,'*')  --Поиграть с циферками
    ) 
    
 /*
@@ -82,7 +85,7 @@ DDL и отправлять XML для повторного создания
 объекта.DBMS_METADATA*/
 
 
-/*Task_3*/
+/*Task_3*/ -- Таблицы хранятся в balance tree (не в heap, а внутри индексов, в листике вся строка, а string в отдельных сегментах)
 -- Step 1
 CREATE TABLE emp AS 
 SELECT 
@@ -180,7 +183,7 @@ drop table heap_addresses;
 drop table emp; 
 
 
-/*Task_4*/
+/*Task_4*/ -- Разрезать на сегменты, где каждый сегмент уникальный dept.id; Только если таблицы соединены ВСЕГДА!
 -- Step 1
 CREATE cluster emp_dept_cluster( deptno NUMBER( 2 ) ) 
     SIZE 1024  
@@ -212,15 +215,15 @@ CREATE TABLE dept
   cluster emp_dept_cluster ( deptno ) ;
 
 -- Step 4
-INSERT INTO dept( deptno , dname , loc); 
+INSERT INTO dept( deptno , dname , loc) 
 SELECT deptno , dname , loc 
-   FROM dept; 
+   FROM scott.dept; 
     
 commit; 
  
  INSERT INTO emp ( empno, ename, job, mgr, hiredate, sal, comm, deptno ) 
  SELECT rownum, ename, job, mgr, hiredate, sal, comm, deptno 
-   FROM emp 
+   FROM scott.emp 
        
 commit; 
 
@@ -242,3 +245,5 @@ ORDER BY deptno
 drop table emp;
 drop table dept;
 drop cluster emp_dept_cluster; 
+
+/*Task_5*/
