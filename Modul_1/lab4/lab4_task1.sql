@@ -18,11 +18,11 @@ select count(distinct (dbms_rowid.rowid_block_number(rowid))) block_ct from t2 ;
 
 -- Explain Plan: 
 SET autotrace ON;
-
 SELECT COUNT( * ) 
    FROM t2 ;
    
 -- Step 4
+SET autotrace OFF;
 DELETE FROM t2;
 
 -- Step 5
@@ -34,7 +34,6 @@ select count(distinct (dbms_rowid.rowid_block_number(rowid))) block_ct from t2 ;
 
 -- Explain Plan: 
 SET autotrace ON;
-
 SELECT COUNT( * ) 
    FROM t2 ;
    
@@ -55,7 +54,6 @@ select count(distinct (dbms_rowid.rowid_block_number(rowid))) block_ct from t2 ;
 
 -- Explain Plan: 
 SET autotrace ON;
-
 SELECT COUNT( * ) 
    FROM t2 ;
    
@@ -71,6 +69,7 @@ select count(distinct (dbms_rowid.rowid_block_number(rowid))) block_ct from t2 ;
 
 -- Explain Plan: 
 SET autotrace ON;
-
 SELECT COUNT( * ) 
    FROM t2 ;
+   
+drop table t2;

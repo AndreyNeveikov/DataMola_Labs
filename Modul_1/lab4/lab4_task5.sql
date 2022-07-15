@@ -14,3 +14,12 @@ SELECT /*+INDEX_SS(emp idx_emp01)*/ emp.* FROM employees emp where ename = 'SCOT
 
 SET autotrace ON;
 SELECT /*+FULL*/ emp.* FROM employees emp WHERE ename = 'SCOTT';
+
+---------------------------------------
+select blocks, segment_name from user_segments;
+---------------------------------------
+select count(distinct (dbms_rowid.rowid_block_number(rowid))) block_ct from employees ;
+---------------------------------------
+SET autotrace ON;
+SELECT COUNT( * ) 
+   FROM employees ;
