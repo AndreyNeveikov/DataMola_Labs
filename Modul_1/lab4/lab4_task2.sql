@@ -10,9 +10,9 @@ CREATE INDEX t2_idx1 ON t2
 
 -- Step 2
 CREATE TABLE t1 AS 
- SELECT MOD( rownum, 100 ) id, rpad( rownum,100 ) t_pad 
+SELECT MOD( rownum, 100 ) id, rpad( rownum,100 ) t_pad 
    FROM dual 
-  CONNECT BY rownum < 100000;
+CONNECT BY rownum < 100000;
   
 -- Step 3
 CREATE INDEX t1_idx1 ON t1 
