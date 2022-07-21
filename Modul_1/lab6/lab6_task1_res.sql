@@ -11,3 +11,10 @@ END;
 select * from U_DW_REFERENCES.cu_lng_scopes;
 select * from U_DW_REFERENCES.cu_lng_types;
 select * from U_DW_REFERENCES.cu_languages;
+
+
+select * from t_localizations;
+select * from cu_languages;
+select * from w_lng_links ;
+select * from cu_lng_scopes;
+select * from cu_lng_types;
