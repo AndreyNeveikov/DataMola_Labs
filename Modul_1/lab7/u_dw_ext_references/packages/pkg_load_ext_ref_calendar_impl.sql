@@ -175,9 +175,28 @@ END pkg_load_ext_ref_calendar;
 /
 
 
-
+alter session set current_schema=u_dw_ext_references;
 exec pkg_load_ext_ref_calendar.load_ref_calendar;
 select * from t_ext_calendar;
 
+alter session set current_schema=u_dw_ext_references;
 exec pkg_load_ext_ref_calendar.load_cls_days;
 select * from cls_days;
+
+alter session set current_schema=u_dw_ext_references;
+exec pkg_load_ext_ref_calendar.load_cls_months;
+select * from cls_months;
+
+alter session set current_schema=u_dw_ext_references;
+exec pkg_load_ext_ref_calendar.load_cls_years;
+select * from cls_years;
+
+alter session set current_schema=u_dw_ext_references;
+exec pkg_load_ext_ref_calendar.load_cls_quarters;
+select * from cls_quarters;
+
+alter session set current_schema=u_dw_ext_references;
+exec pkg_load_ext_ref_calendar.load_cls_weeks;
+select * from cls_weeks;
+
+commit;

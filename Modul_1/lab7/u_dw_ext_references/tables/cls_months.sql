@@ -1,5 +1,5 @@
 alter session set current_schema=u_dw_ext_references;
-drop table cls_months;
+--drop table cls_months;
 
 alter session set current_schema=u_dw_ext_references;
 
