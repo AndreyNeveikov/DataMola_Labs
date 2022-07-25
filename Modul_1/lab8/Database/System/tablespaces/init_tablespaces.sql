@@ -1,0 +1,114 @@
+DROP TABLESPACE ts_sa_customers_data_01 INCLUDING CONTENTS AND DATAFILES CASCADE CONSTRAINTS;
+DROP TABLESPACE ts_sa_orders_data_01 INCLUDING CONTENTS AND DATAFILES CASCADE CONSTRAINTS;
+DROP TABLESPACE ts_sa_currencies_data_01 INCLUDING CONTENTS AND DATAFILES CASCADE CONSTRAINTS;
+DROP TABLESPACE ts_dw_cl_01 INCLUDING CONTENTS AND DATAFILES CASCADE CONSTRAINTS;
+--DROP TABLESPACE ts_dw_data_01;
+DROP TABLESPACE ts_dw_star_cls_01 INCLUDING CONTENTS AND DATAFILES CASCADE CONSTRAINTS;
+DROP TABLESPACE ts_sal_cl_01 INCLUDING CONTENTS AND DATAFILES CASCADE CONSTRAINTS;
+DROP TABLESPACE ts_dm_employees_01 INCLUDING CONTENTS AND DATAFILES CASCADE CONSTRAINTS;
+DROP TABLESPACE ts_dm_customers_01 INCLUDING CONTENTS AND DATAFILES CASCADE CONSTRAINTS;
+DROP TABLESPACE ts_dm_orders_01 INCLUDING CONTENTS AND DATAFILES CASCADE CONSTRAINTS;
+DROP TABLESPACE ts_dm_currencies_01 INCLUDING CONTENTS AND DATAFILES CASCADE CONSTRAINTS;
+DROP TABLESPACE ts_dm_doers_01 INCLUDING CONTENTS AND DATAFILES CASCADE CONSTRAINTS;
+DROP TABLESPACE ts_dm_paybacks_01 INCLUDING CONTENTS AND DATAFILES CASCADE CONSTRAINTS;
+DROP TABLESPACE ts_dm_accounting_01 INCLUDING CONTENTS AND DATAFILES CASCADE CONSTRAINTS;
+DROP TABLESPACE ts_dm_regions_01 INCLUDING CONTENTS AND DATAFILES CASCADE CONSTRAINTS;
+
+----------------------------------------------------------
+SELECT * from dba_data_files ;
+----------------------------------------------------------
+/*Storage level*/
+CREATE TABLESPACE ts_sa_customers_data_01
+DATAFILE '/oracle/u02/oradata/ANeveykovdb/db_qpt_sa_customers_data_01.dat'
+SIZE 150M reuse
+ AUTOEXTEND ON NEXT 50M
+ SEGMENT SPACE MANAGEMENT AUTO;
+
+CREATE TABLESPACE ts_sa_orders_data_01
+DATAFILE '/oracle/u02/oradata/ANeveykovdb/db_qpt_sa_orders_data_01.dat'
+SIZE 150M reuse
+ AUTOEXTEND ON NEXT 50M
+ SEGMENT SPACE MANAGEMENT AUTO;
+
+CREATE TABLESPACE ts_sa_currencies_data_01
+DATAFILE '/oracle/u02/oradata/ANeveykovdb/db_qpt_sa_currencies_data_01.dat'
+SIZE 50M reuse
+ AUTOEXTEND ON NEXT 10M
+ SEGMENT SPACE MANAGEMENT AUTO;
+
+/*Data warehouse Cleansing Level*/
+CREATE TABLESPACE ts_dw_cl_01
+DATAFILE '/oracle/u02/oradata/ANeveykovdb/db_qpt_dw_cl_01.dat'
+SIZE 150M reuse
+ AUTOEXTEND ON NEXT 100M
+ SEGMENT SPACE MANAGEMENT AUTO;
+ 
+/*Data warehouse Start Cleansing Level*/
+CREATE TABLESPACE ts_dw_data_01
+DATAFILE '/oracle/u02/oradata/ANeveykovdb/db_qpt_dw_data_01.dat'
+SIZE 150M reuse
+ AUTOEXTEND ON NEXT 50M
+ SEGMENT SPACE MANAGEMENT AUTO;
+
+/*Start Cleansing Level*/
+CREATE TABLESPACE ts_dw_star_cls_01
+DATAFILE '/oracle/u02/oradata/ANeveykovdb/db_qpt_dw_star_cls_01.dat'
+SIZE 150M reuse
+ AUTOEXTEND ON NEXT 50M
+ SEGMENT SPACE MANAGEMENT AUTO;
+ 
+ CREATE TABLESPACE ts_sal_cl_01
+DATAFILE '/oracle/u02/oradata/ANeveykovdb/db_qpt_sal_cl_01.dat'
+SIZE 150M reuse
+ AUTOEXTEND ON NEXT 50M
+ SEGMENT SPACE MANAGEMENT AUTO;
+ 
+/*Data warehouse Start Level and Data Marts*/ 
+ CREATE TABLESPACE ts_dm_employees_01
+DATAFILE '/oracle/u02/oradata/ANeveykovdb/db_qpt_dm_employees_01.dat'
+SIZE 50M reuse
+ AUTOEXTEND ON NEXT 10M
+ SEGMENT SPACE MANAGEMENT AUTO;
+ 
+ CREATE TABLESPACE ts_dm_customers_01
+DATAFILE '/oracle/u02/oradata/ANeveykovdb/db_qpt_dm_customers_01.dat'
+SIZE 150M reuse
+ AUTOEXTEND ON NEXT 50M
+ SEGMENT SPACE MANAGEMENT AUTO;
+ 
+ CREATE TABLESPACE ts_dm_orders_01
+DATAFILE '/oracle/u02/oradata/ANeveykovdb/db_qpt_dm_orders_01.dat'
+SIZE 150M reuse
+ AUTOEXTEND ON NEXT 50M
+ SEGMENT SPACE MANAGEMENT AUTO;
+ 
+ CREATE TABLESPACE ts_dm_currencies_01
+DATAFILE '/oracle/u02/oradata/ANeveykovdb/db_qpt_dm_currencies_01.dat'
+SIZE 100M reuse
+ AUTOEXTEND ON NEXT 10M
+ SEGMENT SPACE MANAGEMENT AUTO;
+ 
+ CREATE TABLESPACE ts_dm_doers_01
+DATAFILE '/oracle/u02/oradata/ANeveykovdb/db_qpt_dm_doers_01.dat'
+SIZE 50M reuse
+ AUTOEXTEND ON NEXT 5M
+ SEGMENT SPACE MANAGEMENT AUTO;
+ 
+ CREATE TABLESPACE ts_dm_paybacks_01
+DATAFILE '/oracle/u02/oradata/ANeveykovdb/db_qpt_dm_paybacks_01.dat'
+SIZE 150M reuse
+ AUTOEXTEND ON NEXT 50M
+ SEGMENT SPACE MANAGEMENT AUTO;
+ 
+ CREATE TABLESPACE ts_dm_accounting_01
+DATAFILE '/oracle/u02/oradata/ANeveykovdb/db_qpt_dm_accounting_01.dat'
+SIZE 100M reuse
+ AUTOEXTEND ON NEXT 10M
+ SEGMENT SPACE MANAGEMENT AUTO;
+ 
+
+ CREATE TABLESPACE ts_dm_regions_01
+DATAFILE '/oracle/u02/oradata/ANeveykovdb/db_qpt_dw_regions_01.dat'
+SIZE 70M reuse
+ AUTOEXTEND ON NEXT 15M
+ SEGMENT SPACE MANAGEMENT AUTO;
