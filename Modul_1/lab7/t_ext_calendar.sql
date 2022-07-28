@@ -23,3 +23,6 @@ DAYS_IN_CAL_YEAR              NUMBER  ,
 BEG_OF_CAL_YEAR               DATE   ,      
 END_OF_CAL_YEAR               DATE         
 )
+
+alter session set current_schema=u_dw_ext_references;
+select * from t_ext_calendar;

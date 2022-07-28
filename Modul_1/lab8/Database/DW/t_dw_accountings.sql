@@ -3,7 +3,7 @@
 
 alter session set current_schema=DW_DATA;
 Create table t_dw_accounting (
-date_id                       INT          ,
+date_id                       DATE         ,
 taxes                         DATE         ,      
 mandatory_payments            DATE         ,    
 depreciation_rate             VARCHAR2(44) ,
