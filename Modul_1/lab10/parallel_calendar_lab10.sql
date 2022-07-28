@@ -1,7 +1,7 @@
 DROP TABLE calendar_lab10;
 -- parallel 2
 
-CREATE TABLE calendar_lab10 parallel 64 AS (SELECT * FROM
+CREATE TABLE calendar_lab10 parallel 2 AS (SELECT * FROM
 (SELECT 
   TRUNC( sd + rn ) time_id,
   TO_CHAR( sd + rn, 'fmDay' ) day_name,
@@ -72,20 +72,6 @@ WHERE day_name IN('Понедельник', 'Пятница', 'Воскресенье');
 DELETE /*+ parallel(TIMES, 4)*/ FROM calendar_lab10
 WHERE day_name IN('Понедельник', 'Пятница', 'Воскресенье');
 
-
-
-/*Task_1*/
-SELECT * FROM calendar_lab10
-WHERE day_name IN('Понедельник', 'Пятница', 'Воскресенье')
-ORDER BY time_id DESC;
-
-SELECT /*+ parallel(TIMES, 4)*/* FROM calendar_lab10
-WHERE day_name IN('Понедельник', 'Пятница', 'Воскресенье')
-ORDER BY time_id DESC;
-
-/*Task_2*/
-DELETE FROM calendar_lab10
-WHERE day_name IN('Понедельник', 'Пятница', 'Воскресенье');
-
-DELETE /*+ parallel(TIMES, 4)*/ FROM calendar_lab10
-WHERE day_name IN('Понедельник', 'Пятница', 'Воскресенье');
+/*Task_3*/
+DROP TABLE calendar_lab10;
+DROP TABLE  /*+ parallel(TIMES, 4)*/ calendar_lab10;
