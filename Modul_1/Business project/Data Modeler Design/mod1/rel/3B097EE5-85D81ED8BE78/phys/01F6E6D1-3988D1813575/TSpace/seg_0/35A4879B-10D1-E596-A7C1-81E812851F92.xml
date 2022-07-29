@@ -1,0 +1,11 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableSpaceOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TableSpaceOraclev10g" name="TS_DW_CL_01" directorySegmentName="seg_0" id="35A4879B-10D1-E596-A7C1-81E812851F92">
+<sourceConnName>Andrey Neveykov -  Remote</sourceConnName>
+<sourceObjSchema>DW_CL</sourceObjSchema>
+<sourceObjName>TS_DW_CL_01</sourceObjName>
+<createdBy>User</createdBy>
+<createdTime>2022-07-29 16:43:39 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+<emUniformSize>0</emUniformSize>
+<extentManagement>LOCAL</extentManagement>
+</TableSpaceOraclev10g>

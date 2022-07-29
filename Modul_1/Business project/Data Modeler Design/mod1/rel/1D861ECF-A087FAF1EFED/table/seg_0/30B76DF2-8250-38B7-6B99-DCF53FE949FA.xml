@@ -1,0 +1,100 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="30B76DF2-8250-38B7-6B99-DCF53FE949FA" schemaObject="84DA3926-D0BC-BA01-4676-D36B04E1B82C" name="T_DW_CURRENCIES">
+<sourceConnName>Andrey Neveykov -  Remote</sourceConnName>
+<sourceObjSchema>DW_DATA</sourceObjSchema>
+<sourceObjName>T_DW_CURRENCIES</sourceObjName>
+<createdBy>User</createdBy>
+<createdTime>2022-07-29 15:52:42 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CURRENCI_ID" id="D9B10C3F-8E6F-1331-DCF4-EE66C25E25D4">
+<sourceConnName>Andrey Neveykov -  Remote</sourceConnName>
+<sourceObjSchema>T_DW_CURRENCIES</sourceObjSchema>
+<sourceObjName>CURRENCI_ID</sourceObjName>
+<createdBy>User</createdBy>
+<createdTime>2022-07-29 15:52:42 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>*</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,*,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CURRENCI_NAME" id="9643F67E-58BF-3BE0-DBD0-AF5913B58EC7">
+<sourceConnName>Andrey Neveykov -  Remote</sourceConnName>
+<sourceObjSchema>T_DW_CURRENCIES</sourceObjSchema>
+<sourceObjName>CURRENCI_NAME</sourceObjName>
+<createdBy>User</createdBy>
+<createdTime>2022-07-29 15:52:42 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>25 BYTE</dataTypeSize>
+<ownDataTypeParameters>25 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DIRECT_EXCHANGE_RATE" id="B512C01E-F8A8-63ED-DEBE-53517DBE0968">
+<sourceConnName>Andrey Neveykov -  Remote</sourceConnName>
+<sourceObjSchema>T_DW_CURRENCIES</sourceObjSchema>
+<sourceObjName>DIRECT_EXCHANGE_RATE</sourceObjName>
+<createdBy>User</createdBy>
+<createdTime>2022-07-29 15:52:42 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<dataTypePrecision>126</dataTypePrecision>
+<ownDataTypeParameters>,126,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="REVERSE_EXCHANGE_RATE" id="6E98E86E-AC7D-0D6A-6C6D-4E894EC2711F">
+<sourceConnName>Andrey Neveykov -  Remote</sourceConnName>
+<sourceObjSchema>T_DW_CURRENCIES</sourceObjSchema>
+<sourceObjName>REVERSE_EXCHANGE_RATE</sourceObjName>
+<createdBy>User</createdBy>
+<createdTime>2022-07-29 15:52:42 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<dataTypePrecision>126</dataTypePrecision>
+<ownDataTypeParameters>,126,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A2D76A7B-56D2-7A53-854A-C9E0A4548924" name="PK_T_DW_CURRENCIES">
+<sourceConnName>Andrey Neveykov -  Remote</sourceConnName>
+<sourceObjSchema>DW_DATA</sourceObjSchema>
+<sourceObjName>PK_T_DW_CURRENCIES</sourceObjName>
+<createdBy>User</createdBy>
+<createdTime>2022-07-29 15:52:45 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D9B10C3F-8E6F-1331-DCF4-EE66C25E25D4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D013EE4E-2A82-0714-1507-5FB01E239B93" schemaObject="84DA3926-D0BC-BA01-4676-D36B04E1B82C" name="PK_T_DW_CURRENCIES">
+<sourceConnName>Andrey Neveykov -  Remote</sourceConnName>
+<sourceObjSchema>DW_DATA</sourceObjSchema>
+<sourceObjName>PK_T_DW_CURRENCIES</sourceObjName>
+<createdBy>User</createdBy>
+<createdTime>2022-07-29 15:52:43 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D9B10C3F-8E6F-1331-DCF4-EE66C25E25D4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

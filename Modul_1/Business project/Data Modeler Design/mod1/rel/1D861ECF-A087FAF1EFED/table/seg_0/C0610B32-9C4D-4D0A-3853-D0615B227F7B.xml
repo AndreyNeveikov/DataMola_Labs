@@ -1,0 +1,142 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C0610B32-9C4D-4D0A-3853-D0615B227F7B" schemaObject="84DA3926-D0BC-BA01-4676-D36B04E1B82C" name="T_DW_PAYBACKS">
+<sourceConnName>Andrey Neveykov -  Remote</sourceConnName>
+<sourceObjSchema>DW_DATA</sourceObjSchema>
+<sourceObjName>T_DW_PAYBACKS</sourceObjName>
+<createdBy>User</createdBy>
+<createdTime>2022-07-29 15:52:42 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ORDER_ID" id="C3FD4384-E889-695D-1500-EB3ED39607BD">
+<sourceConnName>Andrey Neveykov -  Remote</sourceConnName>
+<sourceObjSchema>T_DW_PAYBACKS</sourceObjSchema>
+<sourceObjName>ORDER_ID</sourceObjName>
+<createdBy>User</createdBy>
+<createdTime>2022-07-29 15:52:42 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>*</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,*,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CUSTOMER_PAYMENT" id="DB5D8C6B-3C30-62CF-8299-E0EE88B212C2">
+<sourceConnName>Andrey Neveykov -  Remote</sourceConnName>
+<sourceObjSchema>T_DW_PAYBACKS</sourceObjSchema>
+<sourceObjName>CUSTOMER_PAYMENT</sourceObjName>
+<createdBy>User</createdBy>
+<createdTime>2022-07-29 15:52:42 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<dataTypePrecision>126</dataTypePrecision>
+<ownDataTypeParameters>,126,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PRODUCT_COSTS" id="7B6CEFB7-776B-DB6A-0228-FCB1D87D10A3">
+<sourceConnName>Andrey Neveykov -  Remote</sourceConnName>
+<sourceObjSchema>T_DW_PAYBACKS</sourceObjSchema>
+<sourceObjName>PRODUCT_COSTS</sourceObjName>
+<createdBy>User</createdBy>
+<createdTime>2022-07-29 15:52:42 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<dataTypePrecision>126</dataTypePrecision>
+<ownDataTypeParameters>,126,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FUEL_COSTS" id="DF0297D2-F173-F5FB-821D-0A0864B160CC">
+<sourceConnName>Andrey Neveykov -  Remote</sourceConnName>
+<sourceObjSchema>T_DW_PAYBACKS</sourceObjSchema>
+<sourceObjName>FUEL_COSTS</sourceObjName>
+<createdBy>User</createdBy>
+<createdTime>2022-07-29 15:52:42 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<dataTypePrecision>126</dataTypePrecision>
+<ownDataTypeParameters>,126,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="VEHICLE_DEPRECIATION" id="A28C9F27-2747-B574-9F19-98637E65D190">
+<sourceConnName>Andrey Neveykov -  Remote</sourceConnName>
+<sourceObjSchema>T_DW_PAYBACKS</sourceObjSchema>
+<sourceObjName>VEHICLE_DEPRECIATION</sourceObjName>
+<createdBy>User</createdBy>
+<createdTime>2022-07-29 15:52:42 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<dataTypePrecision>126</dataTypePrecision>
+<ownDataTypeParameters>,126,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="INSURANCE_COST" id="847DB7AA-2FCA-B786-B8FC-073D0434091E">
+<sourceConnName>Andrey Neveykov -  Remote</sourceConnName>
+<sourceObjSchema>T_DW_PAYBACKS</sourceObjSchema>
+<sourceObjName>INSURANCE_COST</sourceObjName>
+<createdBy>User</createdBy>
+<createdTime>2022-07-29 15:52:42 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<dataTypePrecision>126</dataTypePrecision>
+<ownDataTypeParameters>,126,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="UNEXPECTED_EXPENSES" id="600C4E59-F879-DE5D-998C-BDEBAC27C501">
+<sourceConnName>Andrey Neveykov -  Remote</sourceConnName>
+<sourceObjSchema>T_DW_PAYBACKS</sourceObjSchema>
+<sourceObjName>UNEXPECTED_EXPENSES</sourceObjName>
+<createdBy>User</createdBy>
+<createdTime>2022-07-29 15:52:42 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<dataTypePrecision>126</dataTypePrecision>
+<ownDataTypeParameters>,126,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="37BB9989-D8A5-C66B-774A-0089DEE0ADF1" name="PK_T_DW_PAYBACKS">
+<sourceConnName>Andrey Neveykov -  Remote</sourceConnName>
+<sourceObjSchema>DW_DATA</sourceObjSchema>
+<sourceObjName>PK_T_DW_PAYBACKS</sourceObjName>
+<createdBy>User</createdBy>
+<createdTime>2022-07-29 15:52:45 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C3FD4384-E889-695D-1500-EB3ED39607BD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5FAEE1E5-26C3-3789-FD43-9C8FAE381AD0" schemaObject="84DA3926-D0BC-BA01-4676-D36B04E1B82C" name="PK_T_DW_PAYBACKS">
+<sourceConnName>Andrey Neveykov -  Remote</sourceConnName>
+<sourceObjSchema>DW_DATA</sourceObjSchema>
+<sourceObjName>PK_T_DW_PAYBACKS</sourceObjName>
+<createdBy>User</createdBy>
+<createdTime>2022-07-29 15:52:43 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C3FD4384-E889-695D-1500-EB3ED39607BD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

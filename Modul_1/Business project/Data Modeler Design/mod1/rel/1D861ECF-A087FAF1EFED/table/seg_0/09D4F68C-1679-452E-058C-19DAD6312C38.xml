@@ -1,0 +1,175 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="09D4F68C-1679-452E-058C-19DAD6312C38" schemaObject="84DA3926-D0BC-BA01-4676-D36B04E1B82C" name="T_DW_ACCOUNTING">
+<sourceConnName>Andrey Neveykov -  Remote</sourceConnName>
+<sourceObjSchema>DW_DATA</sourceObjSchema>
+<sourceObjName>T_DW_ACCOUNTING</sourceObjName>
+<createdBy>User</createdBy>
+<createdTime>2022-07-29 15:52:42 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="DATE_ID" id="91B7AB48-20E0-3696-4F37-51AFD8042CC1">
+<sourceConnName>Andrey Neveykov -  Remote</sourceConnName>
+<sourceObjSchema>T_DW_ACCOUNTING</sourceObjSchema>
+<sourceObjName>DATE_ID</sourceObjName>
+<createdBy>User</createdBy>
+<createdTime>2022-07-29 15:52:42 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="75C7DF97-D531-7D77-82FB-9BDC2E757851" referredColumn="7FABB4A8-0B89-F186-BD64-55B2DDFB38FA"/>
+</associations>
+</Column>
+<Column name="TAXES" id="8476D1CB-03AB-087E-DEFC-2C62AA822637">
+<sourceConnName>Andrey Neveykov -  Remote</sourceConnName>
+<sourceObjSchema>T_DW_ACCOUNTING</sourceObjSchema>
+<sourceObjName>TAXES</sourceObjName>
+<createdBy>User</createdBy>
+<createdTime>2022-07-29 15:52:42 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MANDATORY_PAYMENTS" id="D3DC6AEF-1E56-C1AB-366D-2FAE7F60FDDD">
+<sourceConnName>Andrey Neveykov -  Remote</sourceConnName>
+<sourceObjSchema>T_DW_ACCOUNTING</sourceObjSchema>
+<sourceObjName>MANDATORY_PAYMENTS</sourceObjName>
+<createdBy>User</createdBy>
+<createdTime>2022-07-29 15:52:42 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DEPRECIATION_RATE" id="60C45A0A-9F76-C22E-6DF8-893EECD2FE1C">
+<sourceConnName>Andrey Neveykov -  Remote</sourceConnName>
+<sourceObjSchema>T_DW_ACCOUNTING</sourceObjSchema>
+<sourceObjName>DEPRECIATION_RATE</sourceObjName>
+<createdBy>User</createdBy>
+<createdTime>2022-07-29 15:52:42 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>44 BYTE</dataTypeSize>
+<ownDataTypeParameters>44 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="INVESTMENTS_FOR_DEVELOPMENT" id="61659CAC-3E0B-E64F-AE24-B282EADF04F5">
+<sourceConnName>Andrey Neveykov -  Remote</sourceConnName>
+<sourceObjSchema>T_DW_ACCOUNTING</sourceObjSchema>
+<sourceObjName>INVESTMENTS_FOR_DEVELOPMENT</sourceObjName>
+<createdBy>User</createdBy>
+<createdTime>2022-07-29 15:52:42 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PAYMENT_TO_OWNER" id="622C9787-7E22-5BC1-804D-F79CC69255D5">
+<sourceConnName>Andrey Neveykov -  Remote</sourceConnName>
+<sourceObjSchema>T_DW_ACCOUNTING</sourceObjSchema>
+<sourceObjName>PAYMENT_TO_OWNER</sourceObjName>
+<createdBy>User</createdBy>
+<createdTime>2022-07-29 15:52:42 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2 BYTE</dataTypeSize>
+<ownDataTypeParameters>2 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CIRCULATING_CAPITAL" id="6E624A3D-366F-F061-0716-8FC30DEF46DA">
+<sourceConnName>Andrey Neveykov -  Remote</sourceConnName>
+<sourceObjSchema>T_DW_ACCOUNTING</sourceObjSchema>
+<sourceObjName>CIRCULATING_CAPITAL</sourceObjName>
+<createdBy>User</createdBy>
+<createdTime>2022-07-29 15:52:42 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>3 BYTE</dataTypeSize>
+<ownDataTypeParameters>3 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FREE_CASH" id="36F0EC61-CCA9-F24C-8859-B912BA173436">
+<sourceConnName>Andrey Neveykov -  Remote</sourceConnName>
+<sourceObjSchema>T_DW_ACCOUNTING</sourceObjSchema>
+<sourceObjName>FREE_CASH</sourceObjName>
+<createdBy>User</createdBy>
+<createdTime>2022-07-29 15:52:42 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="AD58552A-4229-E53C-B7B7-64E24A2F36DB" name="PK_T_DW_ACCOUNTINGS">
+<sourceConnName>Andrey Neveykov -  Remote</sourceConnName>
+<sourceObjSchema>DW_DATA</sourceObjSchema>
+<sourceObjName>PK_T_DW_ACCOUNTINGS</sourceObjName>
+<createdBy>User</createdBy>
+<createdTime>2022-07-29 15:52:45 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="91B7AB48-20E0-3696-4F37-51AFD8042CC1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="CFF72BD2-A48B-4741-7EA9-2BBA6345F45F" schemaObject="84DA3926-D0BC-BA01-4676-D36B04E1B82C" name="PK_T_DW_ACCOUNTINGS">
+<sourceConnName>Andrey Neveykov -  Remote</sourceConnName>
+<sourceObjSchema>DW_DATA</sourceObjSchema>
+<sourceObjName>PK_T_DW_ACCOUNTINGS</sourceObjName>
+<createdBy>User</createdBy>
+<createdTime>2022-07-29 15:52:43 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="91B7AB48-20E0-3696-4F37-51AFD8042CC1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="782A6954-2F8E-61B2-9189-C5C195D12939" name="FK_T_DW_FINACIAL_CALENDAR_T_DW_ACCOUNTING">
+<createdBy>User</createdBy>
+<createdTime>2022-07-29 15:52:46 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="91B7AB48-20E0-3696-4F37-51AFD8042CC1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

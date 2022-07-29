@@ -1,0 +1,87 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev20c class="oracle.dbtools.crest.model.design.storage.oracle.v20c.TableProxyOraclev20c" name="T_DW_ACCOUNTING" directorySegmentName="seg_0" id="09D4F68C-1679-452E-058C-19DAD6312C38">
+<createdBy>User</createdBy>
+<createdTime>2022-07-29 15:52:42 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+<schemaObject>84DA3926-D0BC-BA01-4676-D36B04E1B82C</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>E5166E11-F877-7551-5CB6-2B3F16FADC35</segment>
+<tableSpace>E94B8B9D-7695-1734-6002-1BF5F82CF720</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<inMemory>NO</inMemory>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="FREE_CASH" id="36F0EC61-CCA9-F24C-8859-B912BA173436">
+<createdBy>User</createdBy>
+<createdTime>2022-07-29 15:52:42 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DEPRECIATION_RATE" id="60C45A0A-9F76-C22E-6DF8-893EECD2FE1C">
+<createdBy>User</createdBy>
+<createdTime>2022-07-29 15:52:42 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="INVESTMENTS_FOR_DEVELOPMENT" id="61659CAC-3E0B-E64F-AE24-B282EADF04F5">
+<createdBy>User</createdBy>
+<createdTime>2022-07-29 15:52:42 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="PAYMENT_TO_OWNER" id="622C9787-7E22-5BC1-804D-F79CC69255D5">
+<createdBy>User</createdBy>
+<createdTime>2022-07-29 15:52:42 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CIRCULATING_CAPITAL" id="6E624A3D-366F-F061-0716-8FC30DEF46DA">
+<createdBy>User</createdBy>
+<createdTime>2022-07-29 15:52:42 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="TAXES" id="8476D1CB-03AB-087E-DEFC-2C62AA822637">
+<createdBy>User</createdBy>
+<createdTime>2022-07-29 15:52:42 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DATE_ID" id="91B7AB48-20E0-3696-4F37-51AFD8042CC1">
+<createdBy>User</createdBy>
+<createdTime>2022-07-29 15:52:42 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="MANDATORY_PAYMENTS" id="D3DC6AEF-1E56-C1AB-366D-2FAE7F60FDDD">
+<createdBy>User</createdBy>
+<createdTime>2022-07-29 15:52:42 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="PK_T_DW_ACCOUNTINGS" id="CFF72BD2-A48B-4741-7EA9-2BBA6345F45F">
+<createdBy>User</createdBy>
+<createdTime>2022-07-29 15:52:43 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+<schemaObject>84DA3926-D0BC-BA01-4676-D36B04E1B82C</schemaObject>
+<segment>12E59224-77B0-9625-CF43-4D0FC769E07F</segment>
+<tableSpace>E94B8B9D-7695-1734-6002-1BF5F82CF720</tableSpace>
+</IndexProxy>
+</indexProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FK_T_DW_FINACIAL_CALENDAR_T_DW_ACCOUNTING" id="782A6954-2F8E-61B2-9189-C5C195D12939">
+<createdBy>User</createdBy>
+<createdTime>2022-07-29 15:52:46 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="PK_T_DW_ACCOUNTINGS" id="AD58552A-4229-E53C-B7B7-64E24A2F36DB">
+<createdBy>User</createdBy>
+<createdTime>2022-07-29 15:52:45 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+<segment>12E59224-77B0-9625-CF43-4D0FC769E07F</segment>
+<tableSpace>E94B8B9D-7695-1734-6002-1BF5F82CF720</tableSpace>
+<existingIndex>CFF72BD2-A48B-4741-7EA9-2BBA6345F45F</existingIndex>
+<indexSegment>12E59224-77B0-9625-CF43-4D0FC769E07F</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev20c>

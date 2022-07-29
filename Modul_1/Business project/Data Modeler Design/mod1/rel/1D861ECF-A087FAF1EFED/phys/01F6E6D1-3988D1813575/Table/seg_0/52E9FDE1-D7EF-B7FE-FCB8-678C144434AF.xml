@@ -1,0 +1,314 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev20c class="oracle.dbtools.crest.model.design.storage.oracle.v20c.TableProxyOraclev20c" name="T_DW_FCT_ORDERS" directorySegmentName="seg_0" id="52E9FDE1-D7EF-B7FE-FCB8-678C144434AF">
+<createdBy>User</createdBy>
+<createdTime>2022-07-29 15:52:42 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+<schemaObject>84DA3926-D0BC-BA01-4676-D36B04E1B82C</schemaObject>
+<logging>YES</logging>
+<partitionList class="oracle.dbtools.crest.model.design.storage.oracle.v11g.PartitionListOraclev11g" name="PL1" id="9534C0B6-BD4D-A8D0-699C-077472E4298C">
+<createdBy>User</createdBy>
+<createdTime>2022-07-29 15:52:46 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+<columnIDs>46DF5A1B-4A2F-A429-97B1-703F58391AB1</columnIDs>
+<subPartitionsColumnIDs>7294822D-903E-AD7B-93FC-8CCBCDE0A019</subPartitionsColumnIDs>
+<subPartitionsQuantity>4</subPartitionsQuantity>
+<subpartitionType>HASH</subpartitionType>
+</partitionList>
+<partitioned>YES</partitioned>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>E5166E11-F877-7551-5CB6-2B3F16FADC35</segment>
+<tableSpace>E94B8B9D-7695-1734-6002-1BF5F82CF720</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="PAYMENT_METHOD" id="18CEFF92-4FD1-C0F2-7C41-1FFB33FB45DC">
+<createdBy>User</createdBy>
+<createdTime>2022-07-29 15:52:42 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CURRENCI_ID" id="2283E72A-94C2-22B3-EB1F-EA2DF2757805">
+<createdBy>User</createdBy>
+<createdTime>2022-07-29 15:52:42 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DOER_ID" id="32C2E1C5-51C5-F7A8-FA3F-8D9C073A5C61">
+<createdBy>User</createdBy>
+<createdTime>2022-07-29 15:52:42 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="RECEIVING_DATE" id="382E5FD5-6011-2715-C1AF-74AFFCAC68C5">
+<createdBy>User</createdBy>
+<createdTime>2022-07-29 15:52:42 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DATE_ID" id="46DF5A1B-4A2F-A429-97B1-703F58391AB1">
+<createdBy>User</createdBy>
+<createdTime>2022-07-29 15:52:42 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="REGION_ID" id="4EAA7802-E6A1-F634-8CF3-381F4BC90BCF">
+<createdBy>User</createdBy>
+<createdTime>2022-07-29 15:52:42 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ORDER_PRICE" id="65FB2D1E-0F3F-D4F0-CC29-A653A75CA009">
+<createdBy>User</createdBy>
+<createdTime>2022-07-29 15:52:42 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CLIENT_ID" id="7294822D-903E-AD7B-93FC-8CCBCDE0A019">
+<createdBy>User</createdBy>
+<createdTime>2022-07-29 15:52:42 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ORDER_DATE" id="7A9A45F6-BF61-7437-811C-7F5C5241726F">
+<createdBy>User</createdBy>
+<createdTime>2022-07-29 15:52:42 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ORDER_STATUS" id="B47F2183-E044-EC8A-CDB6-702C6F937586">
+<createdBy>User</createdBy>
+<createdTime>2022-07-29 15:52:42 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ORDER_ID" id="B5686243-2B49-FB63-8996-BF16B51FD614">
+<createdBy>User</createdBy>
+<createdTime>2022-07-29 15:52:42 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+<autoIncrementDDL>IDENTITY_CLAUSE</autoIncrementDDL>
+</ColumnProxy>
+<ColumnProxy name="EMPLOYEE_ID" id="DF82A403-AECD-29E1-E459-6B7D4F58C1E0">
+<createdBy>User</createdBy>
+<createdTime>2022-07-29 15:52:42 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="PRODUCT_NAME" id="E08687BF-BB62-B5AC-1C5C-9A98F41375B5">
+<createdBy>User</createdBy>
+<createdTime>2022-07-29 15:52:42 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="PK_T_DW_ORDERS" id="50B66A0A-61E1-E78B-E27D-6F8DFB65EDB3">
+<createdBy>User</createdBy>
+<createdTime>2022-07-29 15:52:43 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+<schemaObject>84DA3926-D0BC-BA01-4676-D36B04E1B82C</schemaObject>
+<segment>12E59224-77B0-9625-CF43-4D0FC769E07F</segment>
+<tableSpace>E94B8B9D-7695-1734-6002-1BF5F82CF720</tableSpace>
+</IndexProxy>
+</indexProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FK_T_DW_CUSTOMERS_T_DW_FCT_ORDERS" id="0B9AC257-4B39-5E05-D365-37300ACE85D6">
+<createdBy>User</createdBy>
+<createdTime>2022-07-29 15:52:46 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FK_T_DW_PAYBACKS_T_DW_FCT_ORDERS" id="547AEB54-3DC8-F593-6030-3B3D20FAA329">
+<createdBy>User</createdBy>
+<createdTime>2022-07-29 15:52:46 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FK_T_DW_DOERS_T_DW_FCT_ORDERS" id="59F463EB-D0A4-6D2C-5503-22CE4C7CCF6E">
+<createdBy>User</createdBy>
+<createdTime>2022-07-29 15:52:46 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FK_T_DW_EMPLOYEES_T_DW_FCT_ORDERS" id="73E834C4-925B-6D2D-3BF8-73D7C74F4C6E">
+<createdBy>User</createdBy>
+<createdTime>2022-07-29 15:52:46 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FK_T_DW_CURRENCIES_T_DW_FCT_ORDERS" id="767CBDA9-D21A-CC17-6C06-777DCA4D54EA">
+<createdBy>User</createdBy>
+<createdTime>2022-07-29 15:52:46 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FK_T_DW_ACCOUNTINGS_T_DW_FCT_ORDERS" id="B924C2E8-47AF-5B73-6ECF-DD63D05F1F43">
+<createdBy>User</createdBy>
+<createdTime>2022-07-29 15:52:46 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FK_T_DW_REGIONS_T_DW_FCT_ORDERS" id="DA147145-6047-F76B-7F2A-91C3E8FAA28B">
+<createdBy>User</createdBy>
+<createdTime>2022-07-29 15:52:46 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<partitions>
+<Partition class="oracle.dbtools.crest.model.design.storage.oracle.v11g.PartitionOraclev11g" name="FST_ADVERTISING_PERIOD" id="C1ED38CF-B48A-51AD-D7A0-2B29814A27F7">
+<createdBy>User</createdBy>
+<createdTime>2022-07-29 15:52:46 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+<position>1</position>
+<segment>E5166E11-F877-7551-5CB6-2B3F16FADC35</segment>
+<subPartitionsQuantity>4</subPartitionsQuantity>
+<tableSpace>E94B8B9D-7695-1734-6002-1BF5F82CF720</tableSpace>
+<valueList>TO_DATE(&apos; 2022-02-19 00:00:00&apos;, &apos;SYYYY-MM-DD HH24:MI:SS&apos;, &apos;NLS_CALENDAR=GREGORIAN&apos;)</valueList>
+<hashSubpartitions>
+<HashPartition class="oracle.dbtools.crest.model.design.storage.oracle.v10g.HashPartitionOraclev10g" name="FST_ADVERTISING_PERIOD_SUB_1" id="7AC739F9-D12C-1E26-E7A0-2059F8102DB7">
+<createdBy>User</createdBy>
+<createdTime>2022-07-29 15:52:46 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+<position>1</position>
+<tableSpace>E94B8B9D-7695-1734-6002-1BF5F82CF720</tableSpace>
+</HashPartition>
+<HashPartition class="oracle.dbtools.crest.model.design.storage.oracle.v10g.HashPartitionOraclev10g" name="FST_ADVERTISING_PERIOD_SUB_2" id="98688A3E-C028-53F8-D87C-F3D1417B809F">
+<createdBy>User</createdBy>
+<createdTime>2022-07-29 15:52:46 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+<position>2</position>
+<tableSpace>E94B8B9D-7695-1734-6002-1BF5F82CF720</tableSpace>
+</HashPartition>
+<HashPartition class="oracle.dbtools.crest.model.design.storage.oracle.v10g.HashPartitionOraclev10g" name="FST_ADVERTISING_PERIOD_SUB_3" id="F7B67F5E-5773-F134-2927-FABBC48DD250">
+<createdBy>User</createdBy>
+<createdTime>2022-07-29 15:52:46 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+<position>3</position>
+<tableSpace>E94B8B9D-7695-1734-6002-1BF5F82CF720</tableSpace>
+</HashPartition>
+<HashPartition class="oracle.dbtools.crest.model.design.storage.oracle.v10g.HashPartitionOraclev10g" name="FST_ADVERTISING_PERIOD_SUB_4" id="39752D44-96C9-DA43-8A3B-9AFED35123D3">
+<createdBy>User</createdBy>
+<createdTime>2022-07-29 15:52:46 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+<position>4</position>
+<tableSpace>E94B8B9D-7695-1734-6002-1BF5F82CF720</tableSpace>
+</HashPartition>
+</hashSubpartitions>
+</Partition>
+<Partition class="oracle.dbtools.crest.model.design.storage.oracle.v11g.PartitionOraclev11g" name="FTH_ADVERTISING_PERIOD" id="5310C3DA-F193-82C5-AAE4-9DF1CD5FF41E">
+<createdBy>User</createdBy>
+<createdTime>2022-07-29 15:52:46 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+<position>4</position>
+<segment>E5166E11-F877-7551-5CB6-2B3F16FADC35</segment>
+<subPartitionsQuantity>4</subPartitionsQuantity>
+<tableSpace>E94B8B9D-7695-1734-6002-1BF5F82CF720</tableSpace>
+<valueList>MAXVALUE</valueList>
+<hashSubpartitions>
+<HashPartition class="oracle.dbtools.crest.model.design.storage.oracle.v10g.HashPartitionOraclev10g" name="FTH_ADVERTISING_PERIOD_SUB_1" id="70DFF804-B28D-92DB-AB80-13BC8703207F">
+<createdBy>User</createdBy>
+<createdTime>2022-07-29 15:52:46 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+<position>1</position>
+<tableSpace>E94B8B9D-7695-1734-6002-1BF5F82CF720</tableSpace>
+</HashPartition>
+<HashPartition class="oracle.dbtools.crest.model.design.storage.oracle.v10g.HashPartitionOraclev10g" name="FTH_ADVERTISING_PERIOD_SUB_2" id="6E373780-5BA1-BDDE-1870-CA51B2B442BC">
+<createdBy>User</createdBy>
+<createdTime>2022-07-29 15:52:46 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+<position>2</position>
+<tableSpace>E94B8B9D-7695-1734-6002-1BF5F82CF720</tableSpace>
+</HashPartition>
+<HashPartition class="oracle.dbtools.crest.model.design.storage.oracle.v10g.HashPartitionOraclev10g" name="FTH_ADVERTISING_PERIOD_SUB_3" id="CB685ED6-8598-1008-2559-06284886159B">
+<createdBy>User</createdBy>
+<createdTime>2022-07-29 15:52:46 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+<position>3</position>
+<tableSpace>E94B8B9D-7695-1734-6002-1BF5F82CF720</tableSpace>
+</HashPartition>
+<HashPartition class="oracle.dbtools.crest.model.design.storage.oracle.v10g.HashPartitionOraclev10g" name="FTH_ADVERTISING_PERIOD_SUB_4" id="11352B42-4CA3-FEB4-0976-AF41352BEC11">
+<createdBy>User</createdBy>
+<createdTime>2022-07-29 15:52:46 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+<position>4</position>
+<tableSpace>E94B8B9D-7695-1734-6002-1BF5F82CF720</tableSpace>
+</HashPartition>
+</hashSubpartitions>
+</Partition>
+<Partition class="oracle.dbtools.crest.model.design.storage.oracle.v11g.PartitionOraclev11g" name="SND_ADVERTISING_PERIOD" id="8A044B2C-7B1F-184A-5314-2A7765279C02">
+<createdBy>User</createdBy>
+<createdTime>2022-07-29 15:52:46 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+<position>2</position>
+<segment>E5166E11-F877-7551-5CB6-2B3F16FADC35</segment>
+<subPartitionsQuantity>4</subPartitionsQuantity>
+<tableSpace>E94B8B9D-7695-1734-6002-1BF5F82CF720</tableSpace>
+<valueList>TO_DATE(&apos; 2022-04-10 00:00:00&apos;, &apos;SYYYY-MM-DD HH24:MI:SS&apos;, &apos;NLS_CALENDAR=GREGORIAN&apos;)</valueList>
+<hashSubpartitions>
+<HashPartition class="oracle.dbtools.crest.model.design.storage.oracle.v10g.HashPartitionOraclev10g" name="SND_ADVERTISING_PERIOD_SUB_1" id="BE321C50-09C1-B348-1113-AD6323D34103">
+<createdBy>User</createdBy>
+<createdTime>2022-07-29 15:52:46 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+<position>1</position>
+<tableSpace>E94B8B9D-7695-1734-6002-1BF5F82CF720</tableSpace>
+</HashPartition>
+<HashPartition class="oracle.dbtools.crest.model.design.storage.oracle.v10g.HashPartitionOraclev10g" name="SND_ADVERTISING_PERIOD_SUB_2" id="E1A51790-83CC-C8FB-18FE-0A3678711F24">
+<createdBy>User</createdBy>
+<createdTime>2022-07-29 15:52:46 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+<position>2</position>
+<tableSpace>E94B8B9D-7695-1734-6002-1BF5F82CF720</tableSpace>
+</HashPartition>
+<HashPartition class="oracle.dbtools.crest.model.design.storage.oracle.v10g.HashPartitionOraclev10g" name="SND_ADVERTISING_PERIOD_SUB_3" id="91D19987-4F4B-1CD3-141E-D813D5C27290">
+<createdBy>User</createdBy>
+<createdTime>2022-07-29 15:52:46 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+<position>3</position>
+<tableSpace>E94B8B9D-7695-1734-6002-1BF5F82CF720</tableSpace>
+</HashPartition>
+<HashPartition class="oracle.dbtools.crest.model.design.storage.oracle.v10g.HashPartitionOraclev10g" name="SND_ADVERTISING_PERIOD_SUB_4" id="DAADD078-6523-E8DE-4A79-64D6E6A619B0">
+<createdBy>User</createdBy>
+<createdTime>2022-07-29 15:52:46 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+<position>4</position>
+<tableSpace>E94B8B9D-7695-1734-6002-1BF5F82CF720</tableSpace>
+</HashPartition>
+</hashSubpartitions>
+</Partition>
+<Partition class="oracle.dbtools.crest.model.design.storage.oracle.v11g.PartitionOraclev11g" name="TRD_ADVERTISING_PERIOD" id="8DD03781-D9F2-3961-E251-60FAB0384F09">
+<createdBy>User</createdBy>
+<createdTime>2022-07-29 15:52:46 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+<position>3</position>
+<segment>E5166E11-F877-7551-5CB6-2B3F16FADC35</segment>
+<subPartitionsQuantity>4</subPartitionsQuantity>
+<tableSpace>E94B8B9D-7695-1734-6002-1BF5F82CF720</tableSpace>
+<valueList>TO_DATE(&apos; 2022-05-30 00:00:00&apos;, &apos;SYYYY-MM-DD HH24:MI:SS&apos;, &apos;NLS_CALENDAR=GREGORIAN&apos;)</valueList>
+<hashSubpartitions>
+<HashPartition class="oracle.dbtools.crest.model.design.storage.oracle.v10g.HashPartitionOraclev10g" name="TRD_ADVERTISING_PERIOD_SUB_1" id="2B7A512F-B40D-CC0F-CD94-92968258D771">
+<createdBy>User</createdBy>
+<createdTime>2022-07-29 15:52:46 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+<position>1</position>
+<tableSpace>E94B8B9D-7695-1734-6002-1BF5F82CF720</tableSpace>
+</HashPartition>
+<HashPartition class="oracle.dbtools.crest.model.design.storage.oracle.v10g.HashPartitionOraclev10g" name="TRD_ADVERTISING_PERIOD_SUB_2" id="80C2CB8F-84FD-2343-A713-663CA37AC77D">
+<createdBy>User</createdBy>
+<createdTime>2022-07-29 15:52:46 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+<position>2</position>
+<tableSpace>E94B8B9D-7695-1734-6002-1BF5F82CF720</tableSpace>
+</HashPartition>
+<HashPartition class="oracle.dbtools.crest.model.design.storage.oracle.v10g.HashPartitionOraclev10g" name="TRD_ADVERTISING_PERIOD_SUB_3" id="F2AE20ED-CEA4-08FC-DB1D-AC66CD2973D1">
+<createdBy>User</createdBy>
+<createdTime>2022-07-29 15:52:46 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+<position>3</position>
+<tableSpace>E94B8B9D-7695-1734-6002-1BF5F82CF720</tableSpace>
+</HashPartition>
+<HashPartition class="oracle.dbtools.crest.model.design.storage.oracle.v10g.HashPartitionOraclev10g" name="TRD_ADVERTISING_PERIOD_SUB_4" id="2D218F07-DEED-7430-D27C-DCE9D4521B14">
+<createdBy>User</createdBy>
+<createdTime>2022-07-29 15:52:46 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+<position>4</position>
+<tableSpace>E94B8B9D-7695-1734-6002-1BF5F82CF720</tableSpace>
+</HashPartition>
+</hashSubpartitions>
+</Partition>
+</partitions>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="PK_T_DW_ORDERS" id="C450E9A4-94FB-BBE7-2D3B-4606E30B2A2E">
+<createdBy>User</createdBy>
+<createdTime>2022-07-29 15:52:45 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+<segment>12E59224-77B0-9625-CF43-4D0FC769E07F</segment>
+<tableSpace>E94B8B9D-7695-1734-6002-1BF5F82CF720</tableSpace>
+<existingIndex>50B66A0A-61E1-E78B-E27D-6F8DFB65EDB3</existingIndex>
+<indexSegment>12E59224-77B0-9625-CF43-4D0FC769E07F</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev20c>

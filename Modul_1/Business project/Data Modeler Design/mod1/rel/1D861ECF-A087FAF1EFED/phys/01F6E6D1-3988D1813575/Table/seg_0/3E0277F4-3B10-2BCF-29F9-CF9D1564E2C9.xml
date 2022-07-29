@@ -1,0 +1,140 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev20c class="oracle.dbtools.crest.model.design.storage.oracle.v20c.TableProxyOraclev20c" name="T_DW_FINANCIAL_CALENDAR" directorySegmentName="seg_0" id="3E0277F4-3B10-2BCF-29F9-CF9D1564E2C9">
+<createdBy>User</createdBy>
+<createdTime>2022-07-29 15:52:42 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+<schemaObject>84DA3926-D0BC-BA01-4676-D36B04E1B82C</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>E5166E11-F877-7551-5CB6-2B3F16FADC35</segment>
+<tableSpace>E94B8B9D-7695-1734-6002-1BF5F82CF720</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<inMemory>NO</inMemory>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="END_OF_CAL_MONTH" id="05AAD924-B69F-A988-D3E1-06B7EA1A1703">
+<createdBy>User</createdBy>
+<createdTime>2022-07-29 15:52:42 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DAY_NAME" id="0C9C08B7-CD1C-DC3A-7EB7-52E30CE338AE">
+<createdBy>User</createdBy>
+<createdTime>2022-07-29 15:52:42 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CALENDAR_WEEK_NUMBER" id="109469FE-18BD-0EEA-50BA-DD4F05B92633">
+<createdBy>User</createdBy>
+<createdTime>2022-07-29 15:52:42 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="WEEK_ENDING_DATE" id="2F5BB44E-825C-62D7-7809-7CCCE5A4BC81">
+<createdBy>User</createdBy>
+<createdTime>2022-07-29 15:52:42 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="BEG_OF_TRD_QUARTER" id="3CC8FA63-792A-84BE-12D6-5243F69D2C11">
+<createdBy>User</createdBy>
+<createdTime>2022-07-29 15:52:42 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="BEG_OF_CAL_YEAR" id="4FE70E63-4CD9-F814-A556-1EEA93E5E6E0">
+<createdBy>User</createdBy>
+<createdTime>2022-07-29 15:52:42 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CALENDAR_MONTH_NAME" id="5EA60588-3FF1-DDA4-2EBA-5D2AA60F6D92">
+<createdBy>User</createdBy>
+<createdTime>2022-07-29 15:52:42 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DAY_NUMBER_IN_WEEK" id="688BF6F4-B9C9-8E7E-7265-1AA56543740F">
+<createdBy>User</createdBy>
+<createdTime>2022-07-29 15:52:42 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DAY_NUMBER_IN_YEAR" id="6D6B8FDE-3E2D-42CD-BE7C-711E9C1063E2">
+<createdBy>User</createdBy>
+<createdTime>2022-07-29 15:52:42 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="BEG_OF_FTH_QUARTER" id="7064586B-5AFC-4ECF-33B9-F1B8A33DA7E5">
+<createdBy>User</createdBy>
+<createdTime>2022-07-29 15:52:42 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CALENDAR_YEAR" id="726A173C-2339-B424-9C38-4CB47653F65E">
+<createdBy>User</createdBy>
+<createdTime>2022-07-29 15:52:42 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DATE_ID" id="7FABB4A8-0B89-F186-BD64-55B2DDFB38FA">
+<createdBy>User</createdBy>
+<createdTime>2022-07-29 15:52:42 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="BEG_OF_FST_QUARTER" id="909440DE-7E9E-7422-E0C4-A221F668023D">
+<createdBy>User</createdBy>
+<createdTime>2022-07-29 15:52:42 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CALENDAR_QUARTER_NUMBER" id="9A33C0E1-1A8A-CDFC-1F40-AA9E241C0483">
+<createdBy>User</createdBy>
+<createdTime>2022-07-29 15:52:42 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DAY_NUMBER_IN_MONTH" id="C3DC10BD-4FB5-299A-25E7-929629DFC3BD">
+<createdBy>User</createdBy>
+<createdTime>2022-07-29 15:52:42 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CALENDAR_MONTH_NUMBER" id="CFB4A01F-5C3E-E937-1917-BE361C57EC37">
+<createdBy>User</createdBy>
+<createdTime>2022-07-29 15:52:42 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DAYS_IN_CAL_YEAR" id="DD160E3E-A606-2268-2B1D-4640FA0AF33B">
+<createdBy>User</createdBy>
+<createdTime>2022-07-29 15:52:42 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="BEG_OF_SND_QUARTER" id="EA0A86CD-1DAC-98B1-45EC-D945BDA53904">
+<createdBy>User</createdBy>
+<createdTime>2022-07-29 15:52:42 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DAYS_IN_CAL_MONTH" id="F30ADE1E-A587-CF73-60A9-8F5330F27DC9">
+<createdBy>User</createdBy>
+<createdTime>2022-07-29 15:52:42 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="END_OF_CAL_YEAR" id="F4B2D398-F233-DE8E-1D79-7838E7DB048E">
+<createdBy>User</createdBy>
+<createdTime>2022-07-29 15:52:42 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="PK_T_DW_FINANCIAL_CALENDAR" id="4FA56AE2-92DD-A45C-DDB4-022057EC5947">
+<createdBy>User</createdBy>
+<createdTime>2022-07-29 15:52:43 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+<schemaObject>84DA3926-D0BC-BA01-4676-D36B04E1B82C</schemaObject>
+<segment>12E59224-77B0-9625-CF43-4D0FC769E07F</segment>
+<tableSpace>E94B8B9D-7695-1734-6002-1BF5F82CF720</tableSpace>
+</IndexProxy>
+</indexProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="PK_T_DW_FINANCIAL_CALENDAR" id="0EF37232-14A2-9B3F-29A6-3B1A9FB9E038">
+<createdBy>User</createdBy>
+<createdTime>2022-07-29 15:52:45 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+<segment>12E59224-77B0-9625-CF43-4D0FC769E07F</segment>
+<tableSpace>E94B8B9D-7695-1734-6002-1BF5F82CF720</tableSpace>
+<existingIndex>4FA56AE2-92DD-A45C-DDB4-022057EC5947</existingIndex>
+<indexSegment>12E59224-77B0-9625-CF43-4D0FC769E07F</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev20c>

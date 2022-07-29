@@ -1,0 +1,23 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Diagram class="oracle.dbtools.crest.swingui.relational.DPVRelationalSubView" name="SA_CURRENCIES" id="1ABE19FF-223E-3922-B2A4-6C6F985FF356">
+<createdBy>User</createdBy>
+<modifiedBy>User</modifiedBy>
+<createdTime>2022-07-29 16:17:09 UTC</createdTime>
+<autoRoute>false</autoRoute>
+<boxInbox>true</boxInbox>
+<showLegend>false</showLegend>
+<showLabels>false</showLabels>
+<showRelAttributes>false</showRelAttributes>
+<gridEnabled>false</gridEnabled>
+<showGrid>false</showGrid>
+<diagramColor>-1</diagramColor>
+<display>false</display>
+<notation>1</notation>
+<schemaObject>C2A7F484-833B-A3B2-5DBA-28EF7B3F5116</schemaObject>
+<objectViews>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="ABC0BC58-7CD4-AE24-6001-50178F18EBA1" otype="Table" vid="5542C002-05A3-CF7D-1370-3CD43B003094">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="20" y="20" width="312" height="82"/>
+</OView>
+</objectViews>
+</Diagram>

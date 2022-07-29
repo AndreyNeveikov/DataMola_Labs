@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev20c class="oracle.dbtools.crest.model.design.storage.oracle.v20c.TableProxyOraclev20c" name="T_DW_REGIONS" directorySegmentName="seg_0" id="36204820-FA8E-BE9E-94F0-84588223DE46">
+<createdBy>User</createdBy>
+<createdTime>2022-07-29 15:52:42 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+<schemaObject>84DA3926-D0BC-BA01-4676-D36B04E1B82C</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>E5166E11-F877-7551-5CB6-2B3F16FADC35</segment>
+<tableSpace>E94B8B9D-7695-1734-6002-1BF5F82CF720</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<inMemory>NO</inMemory>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="VAT_RATE" id="201E9B53-0190-32BA-40D7-F8DB81DE8EFF">
+<createdBy>User</createdBy>
+<createdTime>2022-07-29 15:52:42 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="OFFICIAL_LANGUAGE" id="2B856176-CA36-B5CE-FCEE-A82AFE6F20E2">
+<createdBy>User</createdBy>
+<createdTime>2022-07-29 15:52:42 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COUNTRY" id="2C78EE79-F120-C580-8530-DB623D16DDEF">
+<createdBy>User</createdBy>
+<createdTime>2022-07-29 15:52:42 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="TIMEZONE" id="8E8D2486-A33C-1AF9-AB61-A2E7C0511774">
+<createdBy>User</createdBy>
+<createdTime>2022-07-29 15:52:42 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CITY" id="9DB9425C-DDC1-B581-2A10-D12C1DE2C4B3">
+<createdBy>User</createdBy>
+<createdTime>2022-07-29 15:52:42 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="REGION_NAME" id="B6CF2799-3C4D-CF82-1079-81183F2614E2">
+<createdBy>User</createdBy>
+<createdTime>2022-07-29 15:52:42 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="REGION_ID" id="E73480A2-33EC-17DC-7A17-A3D90BF5CB18">
+<createdBy>User</createdBy>
+<createdTime>2022-07-29 15:52:42 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="PK_T_DW_REGIONS" id="C0D9714E-7DE5-E55D-B207-3BE999A46D87">
+<createdBy>User</createdBy>
+<createdTime>2022-07-29 15:52:43 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+<schemaObject>84DA3926-D0BC-BA01-4676-D36B04E1B82C</schemaObject>
+<segment>12E59224-77B0-9625-CF43-4D0FC769E07F</segment>
+<tableSpace>E94B8B9D-7695-1734-6002-1BF5F82CF720</tableSpace>
+</IndexProxy>
+</indexProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="PK_T_DW_REGIONS" id="B4506F83-11C5-A4D3-87D3-ABD6F7E80F84">
+<createdBy>User</createdBy>
+<createdTime>2022-07-29 15:52:45 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+<segment>12E59224-77B0-9625-CF43-4D0FC769E07F</segment>
+<tableSpace>E94B8B9D-7695-1734-6002-1BF5F82CF720</tableSpace>
+<existingIndex>C0D9714E-7DE5-E55D-B207-3BE999A46D87</existingIndex>
+<indexSegment>12E59224-77B0-9625-CF43-4D0FC769E07F</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev20c>

@@ -1,0 +1,42 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev20c class="oracle.dbtools.crest.model.design.storage.oracle.v20c.TableProxyOraclev20c" name="T_SA_ORDERS" directorySegmentName="seg_0" id="A5891AEA-79B2-DCB6-B975-309AAF899FEF">
+<createdBy>User</createdBy>
+<createdTime>2022-07-29 16:17:09 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+<schemaObject>72F2869A-5A2C-B235-15ED-FD8AF59C996F</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>E5F65D8B-004D-6C92-94E4-7925074F697A</segment>
+<tableSpace>8BCB82BC-7F39-4AD2-1E44-FF39D89EE614</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<inMemory>NO</inMemory>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="ORDER_PRICE" id="2B90645D-EA56-FF89-BB5A-112BC17A5112">
+<createdBy>User</createdBy>
+<createdTime>2022-07-29 16:17:09 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="RECEIVING_DATE" id="3D584445-85DC-03B0-4BE9-8A7A5B2DDF9A">
+<createdBy>User</createdBy>
+<createdTime>2022-07-29 16:17:09 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="PRODUCT_NAME" id="46BD59B2-6377-95AE-EFBF-C0A4B0B5876F">
+<createdBy>User</createdBy>
+<createdTime>2022-07-29 16:17:09 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ORDER_STATUS" id="81568CC9-B1EE-D08A-A2A6-3830BA2795C6">
+<createdBy>User</createdBy>
+<createdTime>2022-07-29 16:17:09 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ORDER_DATE" id="E04812A8-8A8F-C158-D66C-4774B30A48FD">
+<createdBy>User</createdBy>
+<createdTime>2022-07-29 16:17:09 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+</TableProxyOraclev20c>

@@ -1,0 +1,24 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<RoleOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.RoleOraclev10g" name="DM_ORDERS" directorySegmentName="seg_0" id="584FEBCD-1AEA-6201-FCFB-08345AEB7166">
+<sourceConnName>Andrey Neveykov -  Remote</sourceConnName>
+<sourceObjName>DM_ORDERS</sourceObjName>
+<createdBy>User</createdBy>
+<createdTime>2022-07-29 15:52:48 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+<permissions>
+<Permission class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PermissionsOraclev10g" name="Permissions1" id="056829B8-360E-6BF2-48B1-DBABB4EEF7E4">
+<createdBy>User</createdBy>
+<createdTime>2022-07-29 15:52:48 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+<privileges>SELECT</privileges>
+<table>C0610B32-9C4D-4D0A-3853-D0615B227F7B</table>
+</Permission>
+<Permission class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PermissionsOraclev10g" name="Permissions2" id="51D6A9F9-F588-E216-714D-5858CD0359A6">
+<createdBy>User</createdBy>
+<createdTime>2022-07-29 15:52:48 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+<privileges>SELECT</privileges>
+<table>D6746341-D92B-F965-9299-0F79DCC86348</table>
+</Permission>
+</permissions>
+</RoleOraclev10g>

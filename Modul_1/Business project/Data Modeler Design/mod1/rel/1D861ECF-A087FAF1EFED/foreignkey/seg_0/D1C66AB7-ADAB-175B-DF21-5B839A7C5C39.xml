@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="D1C66AB7-ADAB-175B-DF21-5B839A7C5C39" containerWithKeyObject="52E9FDE1-D7EF-B7FE-FCB8-678C144434AF" localFKIndex="B924C2E8-47AF-5B73-6ECF-DD63D05F1F43" name="FK_T_DW_ACCOUNTINGS_T_DW_FCT_ORDERS">
+<sourceConnName>Andrey Neveykov -  Remote</sourceConnName>
+<sourceObjSchema>DW_DATA</sourceObjSchema>
+<sourceObjName>FK_T_DW_ACCOUNTINGS_T_DW_FCT_ORDERS</sourceObjName>
+<createdBy>User</createdBy>
+<createdTime>2022-07-29 15:52:46 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+<referredTableLongName>DW_DATA.T_DW_ACCOUNTING</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>09D4F68C-1679-452E-058C-19DAD6312C38</referredTableID>
+<keyObject>AD58552A-4229-E53C-B7B7-64E24A2F36DB</keyObject>
+<referredKeyID>AD58552A-4229-E53C-B7B7-64E24A2F36DB</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>DATE_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

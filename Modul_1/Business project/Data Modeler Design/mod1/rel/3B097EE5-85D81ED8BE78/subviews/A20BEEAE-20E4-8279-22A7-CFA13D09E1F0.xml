@@ -1,0 +1,22 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Diagram class="oracle.dbtools.crest.swingui.relational.DPVRelational" name="Andrey Neveykov -  Remote(2)" id="A20BEEAE-20E4-8279-22A7-CFA13D09E1F0">
+<createdBy>User</createdBy>
+<modifiedBy>User</modifiedBy>
+<createdTime>2022-07-29 16:43:38 UTC</createdTime>
+<autoRoute>false</autoRoute>
+<boxInbox>true</boxInbox>
+<showLegend>false</showLegend>
+<showLabels>false</showLabels>
+<showRelAttributes>false</showRelAttributes>
+<gridEnabled>false</gridEnabled>
+<showGrid>false</showGrid>
+<diagramColor>-1</diagramColor>
+<display>false</display>
+<notation>1</notation>
+<objectViews>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="8590BE0F-B19D-8446-F0B3-DF4DC240BDB7" otype="Table" vid="5CF886DB-EE62-30F6-2295-FA3AE6B6AE29">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="20" y="20" width="312" height="236"/>
+</OView>
+</objectViews>
+</Diagram>

@@ -1,0 +1,106 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev20c class="oracle.dbtools.crest.model.design.storage.oracle.v20c.TableProxyOraclev20c" name="T_DW_EMPLOYEES" directorySegmentName="seg_0" id="D6746341-D92B-F965-9299-0F79DCC86348">
+<createdBy>User</createdBy>
+<createdTime>2022-07-29 15:52:42 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+<schemaObject>84DA3926-D0BC-BA01-4676-D36B04E1B82C</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>E5166E11-F877-7551-5CB6-2B3F16FADC35</segment>
+<tableSpace>E94B8B9D-7695-1734-6002-1BF5F82CF720</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<inMemory>NO</inMemory>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="POSITION_OLD" id="01E27354-D4C6-6BD5-4436-C974791E3836">
+<createdBy>User</createdBy>
+<createdTime>2022-07-29 15:52:42 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="VACATION_DAYS_NUMBER" id="10169BD1-2FFB-F6A2-2479-D5FBB6A90D9F">
+<createdBy>User</createdBy>
+<createdTime>2022-07-29 15:52:42 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="SALARY" id="2FFE5C5F-FEAB-6CB0-71CC-3A01C753969F">
+<createdBy>User</createdBy>
+<createdTime>2022-07-29 15:52:42 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="SUBDIVISION" id="3D8F5EC9-746E-3D4E-2DAA-0EB590416109">
+<createdBy>User</createdBy>
+<createdTime>2022-07-29 15:52:42 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="EMPLOYEE_ID" id="3F831382-68DB-CE67-D3E9-F75E822AE2F4">
+<createdBy>User</createdBy>
+<createdTime>2022-07-29 15:52:42 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+<autoIncrementDDL>IDENTITY_CLAUSE</autoIncrementDDL>
+</ColumnProxy>
+<ColumnProxy name="WORK_LENGTH" id="41A32CAA-CACE-AC19-C657-6EE4FE7D7C23">
+<createdBy>User</createdBy>
+<createdTime>2022-07-29 15:52:42 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="EMPLOYEE_SURNAME" id="6849373F-8F17-E154-45E4-9A21BD0C2C3A">
+<createdBy>User</createdBy>
+<createdTime>2022-07-29 15:52:42 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="POSITION_CHANGE_DATE" id="73767730-7167-5F12-1338-3A9F17CC44DD">
+<createdBy>User</createdBy>
+<createdTime>2022-07-29 15:52:42 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="EMPLOYEE_PATRONYMIC" id="73DC33C7-3043-B659-72BE-EF6705A5D54B">
+<createdBy>User</createdBy>
+<createdTime>2022-07-29 15:52:42 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="EMPLOYEE_NAME" id="8C7BFCC6-E88E-EB80-DB18-820B9BF12327">
+<createdBy>User</createdBy>
+<createdTime>2022-07-29 15:52:42 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="POSITION_NOW" id="8CFD611E-111C-60AB-D58E-9FE51D699CFF">
+<createdBy>User</createdBy>
+<createdTime>2022-07-29 15:52:42 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="BONUS" id="988F1326-2C9A-BE29-8090-E24873463098">
+<createdBy>User</createdBy>
+<createdTime>2022-07-29 15:52:42 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="TYPE_OF_LIABILITY" id="EC080CAB-36A9-DCD5-4D64-4050F7588915">
+<createdBy>User</createdBy>
+<createdTime>2022-07-29 15:52:42 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="PK_T_DW_EMPLOYEES" id="FB02F0F0-F61C-6DBD-2A5A-C1F494492161">
+<createdBy>User</createdBy>
+<createdTime>2022-07-29 15:52:43 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+<schemaObject>84DA3926-D0BC-BA01-4676-D36B04E1B82C</schemaObject>
+<segment>12E59224-77B0-9625-CF43-4D0FC769E07F</segment>
+<tableSpace>E94B8B9D-7695-1734-6002-1BF5F82CF720</tableSpace>
+</IndexProxy>
+</indexProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="PK_T_DW_EMPLOYEES" id="230D691F-4280-9E53-DB99-966A119299DE">
+<createdBy>User</createdBy>
+<createdTime>2022-07-29 15:52:45 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+<segment>12E59224-77B0-9625-CF43-4D0FC769E07F</segment>
+<tableSpace>E94B8B9D-7695-1734-6002-1BF5F82CF720</tableSpace>
+<existingIndex>FB02F0F0-F61C-6DBD-2A5A-C1F494492161</existingIndex>
+<indexSegment>12E59224-77B0-9625-CF43-4D0FC769E07F</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev20c>

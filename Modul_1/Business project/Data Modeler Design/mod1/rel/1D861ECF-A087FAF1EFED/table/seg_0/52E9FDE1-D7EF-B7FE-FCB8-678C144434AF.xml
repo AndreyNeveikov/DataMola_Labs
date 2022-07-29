@@ -1,0 +1,328 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="52E9FDE1-D7EF-B7FE-FCB8-678C144434AF" schemaObject="84DA3926-D0BC-BA01-4676-D36B04E1B82C" name="T_DW_FCT_ORDERS">
+<sourceConnName>Andrey Neveykov -  Remote</sourceConnName>
+<sourceObjSchema>DW_DATA</sourceObjSchema>
+<sourceObjName>T_DW_FCT_ORDERS</sourceObjName>
+<createdBy>User</createdBy>
+<createdTime>2022-07-29 15:52:42 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ORDER_ID" id="B5686243-2B49-FB63-8996-BF16B51FD614">
+<sourceConnName>Andrey Neveykov -  Remote</sourceConnName>
+<sourceObjSchema>T_DW_FCT_ORDERS</sourceObjSchema>
+<sourceObjName>ORDER_ID</sourceObjName>
+<createdBy>User</createdBy>
+<createdTime>2022-07-29 15:52:42 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>*</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,*,0</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<defaultOntNull>true</defaultOntNull>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementDisableCache>false</autoIncrementDisableCache>
+<autoIncrementCache>20</autoIncrementCache>
+<autoIncrementOrder>false</autoIncrementOrder>
+<associations>
+<colAssociation fkAssociation="73EF27EC-1EF5-E1C8-6EDC-999945A8CD95" referredColumn="C3FD4384-E889-695D-1500-EB3ED39607BD"/>
+</associations>
+</Column>
+<Column name="CLIENT_ID" id="7294822D-903E-AD7B-93FC-8CCBCDE0A019">
+<sourceConnName>Andrey Neveykov -  Remote</sourceConnName>
+<sourceObjSchema>T_DW_FCT_ORDERS</sourceObjSchema>
+<sourceObjName>CLIENT_ID</sourceObjName>
+<createdBy>User</createdBy>
+<createdTime>2022-07-29 15:52:42 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>*</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,*,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2BA1067C-9250-E2B9-6157-0C01EA39D48F" referredColumn="1E725DA7-B9E5-E354-A8FF-175F094EFBE7"/>
+</associations>
+</Column>
+<Column name="DOER_ID" id="32C2E1C5-51C5-F7A8-FA3F-8D9C073A5C61">
+<sourceConnName>Andrey Neveykov -  Remote</sourceConnName>
+<sourceObjSchema>T_DW_FCT_ORDERS</sourceObjSchema>
+<sourceObjName>DOER_ID</sourceObjName>
+<createdBy>User</createdBy>
+<createdTime>2022-07-29 15:52:42 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>*</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,*,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7742EBC4-A6C1-9B25-8887-97A4465F550C" referredColumn="96668EDC-263D-4901-073A-2C06D4268D04"/>
+</associations>
+</Column>
+<Column name="REGION_ID" id="4EAA7802-E6A1-F634-8CF3-381F4BC90BCF">
+<sourceConnName>Andrey Neveykov -  Remote</sourceConnName>
+<sourceObjSchema>T_DW_FCT_ORDERS</sourceObjSchema>
+<sourceObjName>REGION_ID</sourceObjName>
+<createdBy>User</createdBy>
+<createdTime>2022-07-29 15:52:42 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>*</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,*,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C3BD59C5-4B55-B82A-E28C-4EB49A09CBB4" referredColumn="E73480A2-33EC-17DC-7A17-A3D90BF5CB18"/>
+</associations>
+</Column>
+<Column name="CURRENCI_ID" id="2283E72A-94C2-22B3-EB1F-EA2DF2757805">
+<sourceConnName>Andrey Neveykov -  Remote</sourceConnName>
+<sourceObjSchema>T_DW_FCT_ORDERS</sourceObjSchema>
+<sourceObjName>CURRENCI_ID</sourceObjName>
+<createdBy>User</createdBy>
+<createdTime>2022-07-29 15:52:42 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>*</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,*,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A1859B3A-C2AD-D8AD-FAFC-3F99955EF1C9" referredColumn="D9B10C3F-8E6F-1331-DCF4-EE66C25E25D4"/>
+</associations>
+</Column>
+<Column name="DATE_ID" id="46DF5A1B-4A2F-A429-97B1-703F58391AB1">
+<sourceConnName>Andrey Neveykov -  Remote</sourceConnName>
+<sourceObjSchema>T_DW_FCT_ORDERS</sourceObjSchema>
+<sourceObjName>DATE_ID</sourceObjName>
+<createdBy>User</createdBy>
+<createdTime>2022-07-29 15:52:42 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D1C66AB7-ADAB-175B-DF21-5B839A7C5C39" referredColumn="91B7AB48-20E0-3696-4F37-51AFD8042CC1"/>
+</associations>
+</Column>
+<Column name="EMPLOYEE_ID" id="DF82A403-AECD-29E1-E459-6B7D4F58C1E0">
+<sourceConnName>Andrey Neveykov -  Remote</sourceConnName>
+<sourceObjSchema>T_DW_FCT_ORDERS</sourceObjSchema>
+<sourceObjName>EMPLOYEE_ID</sourceObjName>
+<createdBy>User</createdBy>
+<createdTime>2022-07-29 15:52:42 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>*</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,*,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6C2EDB21-F7E3-4BEC-B4E0-7395BB126886" referredColumn="3F831382-68DB-CE67-D3E9-F75E822AE2F4"/>
+</associations>
+</Column>
+<Column name="PRODUCT_NAME" id="E08687BF-BB62-B5AC-1C5C-9A98F41375B5">
+<sourceConnName>Andrey Neveykov -  Remote</sourceConnName>
+<sourceObjSchema>T_DW_FCT_ORDERS</sourceObjSchema>
+<sourceObjName>PRODUCT_NAME</sourceObjName>
+<createdBy>User</createdBy>
+<createdTime>2022-07-29 15:52:42 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15 BYTE</dataTypeSize>
+<ownDataTypeParameters>15 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ORDER_PRICE" id="65FB2D1E-0F3F-D4F0-CC29-A653A75CA009">
+<sourceConnName>Andrey Neveykov -  Remote</sourceConnName>
+<sourceObjSchema>T_DW_FCT_ORDERS</sourceObjSchema>
+<sourceObjName>ORDER_PRICE</sourceObjName>
+<createdBy>User</createdBy>
+<createdTime>2022-07-29 15:52:42 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<dataTypePrecision>126</dataTypePrecision>
+<ownDataTypeParameters>,126,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ORDER_STATUS" id="B47F2183-E044-EC8A-CDB6-702C6F937586">
+<sourceConnName>Andrey Neveykov -  Remote</sourceConnName>
+<sourceObjSchema>T_DW_FCT_ORDERS</sourceObjSchema>
+<sourceObjName>ORDER_STATUS</sourceObjName>
+<createdBy>User</createdBy>
+<createdTime>2022-07-29 15:52:42 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15 BYTE</dataTypeSize>
+<ownDataTypeParameters>15 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ORDER_DATE" id="7A9A45F6-BF61-7437-811C-7F5C5241726F">
+<sourceConnName>Andrey Neveykov -  Remote</sourceConnName>
+<sourceObjSchema>T_DW_FCT_ORDERS</sourceObjSchema>
+<sourceObjName>ORDER_DATE</sourceObjName>
+<createdBy>User</createdBy>
+<createdTime>2022-07-29 15:52:42 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="RECEIVING_DATE" id="382E5FD5-6011-2715-C1AF-74AFFCAC68C5">
+<sourceConnName>Andrey Neveykov -  Remote</sourceConnName>
+<sourceObjSchema>T_DW_FCT_ORDERS</sourceObjSchema>
+<sourceObjName>RECEIVING_DATE</sourceObjName>
+<createdBy>User</createdBy>
+<createdTime>2022-07-29 15:52:42 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15 BYTE</dataTypeSize>
+<ownDataTypeParameters>15 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PAYMENT_METHOD" id="18CEFF92-4FD1-C0F2-7C41-1FFB33FB45DC">
+<sourceConnName>Andrey Neveykov -  Remote</sourceConnName>
+<sourceObjSchema>T_DW_FCT_ORDERS</sourceObjSchema>
+<sourceObjName>PAYMENT_METHOD</sourceObjName>
+<createdBy>User</createdBy>
+<createdTime>2022-07-29 15:52:42 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15 BYTE</dataTypeSize>
+<ownDataTypeParameters>15 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C450E9A4-94FB-BBE7-2D3B-4606E30B2A2E" name="PK_T_DW_ORDERS">
+<sourceConnName>Andrey Neveykov -  Remote</sourceConnName>
+<sourceObjSchema>DW_DATA</sourceObjSchema>
+<sourceObjName>PK_T_DW_ORDERS</sourceObjName>
+<createdBy>User</createdBy>
+<createdTime>2022-07-29 15:52:45 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B5686243-2B49-FB63-8996-BF16B51FD614"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="50B66A0A-61E1-E78B-E27D-6F8DFB65EDB3" schemaObject="84DA3926-D0BC-BA01-4676-D36B04E1B82C" name="PK_T_DW_ORDERS">
+<sourceConnName>Andrey Neveykov -  Remote</sourceConnName>
+<sourceObjSchema>DW_DATA</sourceObjSchema>
+<sourceObjName>PK_T_DW_ORDERS</sourceObjName>
+<createdBy>User</createdBy>
+<createdTime>2022-07-29 15:52:43 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B5686243-2B49-FB63-8996-BF16B51FD614"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B924C2E8-47AF-5B73-6ECF-DD63D05F1F43" name="FK_T_DW_ACCOUNTINGS_T_DW_FCT_ORDERS">
+<createdBy>User</createdBy>
+<createdTime>2022-07-29 15:52:46 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="46DF5A1B-4A2F-A429-97B1-703F58391AB1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="767CBDA9-D21A-CC17-6C06-777DCA4D54EA" name="FK_T_DW_CURRENCIES_T_DW_FCT_ORDERS">
+<createdBy>User</createdBy>
+<createdTime>2022-07-29 15:52:46 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2283E72A-94C2-22B3-EB1F-EA2DF2757805"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0B9AC257-4B39-5E05-D365-37300ACE85D6" name="FK_T_DW_CUSTOMERS_T_DW_FCT_ORDERS">
+<createdBy>User</createdBy>
+<createdTime>2022-07-29 15:52:46 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7294822D-903E-AD7B-93FC-8CCBCDE0A019"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="59F463EB-D0A4-6D2C-5503-22CE4C7CCF6E" name="FK_T_DW_DOERS_T_DW_FCT_ORDERS">
+<createdBy>User</createdBy>
+<createdTime>2022-07-29 15:52:46 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="32C2E1C5-51C5-F7A8-FA3F-8D9C073A5C61"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="73E834C4-925B-6D2D-3BF8-73D7C74F4C6E" name="FK_T_DW_EMPLOYEES_T_DW_FCT_ORDERS">
+<createdBy>User</createdBy>
+<createdTime>2022-07-29 15:52:46 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DF82A403-AECD-29E1-E459-6B7D4F58C1E0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="547AEB54-3DC8-F593-6030-3B3D20FAA329" name="FK_T_DW_PAYBACKS_T_DW_FCT_ORDERS">
+<createdBy>User</createdBy>
+<createdTime>2022-07-29 15:52:46 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B5686243-2B49-FB63-8996-BF16B51FD614"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DA147145-6047-F76B-7F2A-91C3E8FAA28B" name="FK_T_DW_REGIONS_T_DW_FCT_ORDERS">
+<createdBy>User</createdBy>
+<createdTime>2022-07-29 15:52:46 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4EAA7802-E6A1-F634-8CF3-381F4BC90BCF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

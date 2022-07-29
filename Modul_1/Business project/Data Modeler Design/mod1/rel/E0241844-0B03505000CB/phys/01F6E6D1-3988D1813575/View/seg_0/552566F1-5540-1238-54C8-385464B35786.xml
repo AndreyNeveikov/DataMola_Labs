@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableViewProxyOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TableViewProxyOraclev10g" name="W_EMPLOYEE_PROMOTION" directorySegmentName="seg_0" id="552566F1-5540-1238-54C8-385464B35786">
+<createdBy>User</createdBy>
+<createdTime>2022-07-29 17:30:37 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+<schemaObject>D801972F-762E-00A4-DAD0-299057A0321E</schemaObject>
+</TableViewProxyOraclev10g>

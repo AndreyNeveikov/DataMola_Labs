@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="A1859B3A-C2AD-D8AD-FAFC-3F99955EF1C9" containerWithKeyObject="52E9FDE1-D7EF-B7FE-FCB8-678C144434AF" localFKIndex="767CBDA9-D21A-CC17-6C06-777DCA4D54EA" name="FK_T_DW_CURRENCIES_T_DW_FCT_ORDERS">
+<sourceConnName>Andrey Neveykov -  Remote</sourceConnName>
+<sourceObjSchema>DW_DATA</sourceObjSchema>
+<sourceObjName>FK_T_DW_CURRENCIES_T_DW_FCT_ORDERS</sourceObjName>
+<createdBy>User</createdBy>
+<createdTime>2022-07-29 15:52:46 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+<referredTableLongName>DW_DATA.T_DW_CURRENCIES</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>30B76DF2-8250-38B7-6B99-DCF53FE949FA</referredTableID>
+<keyObject>A2D76A7B-56D2-7A53-854A-C9E0A4548924</keyObject>
+<referredKeyID>A2D76A7B-56D2-7A53-854A-C9E0A4548924</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>CURRENCI_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

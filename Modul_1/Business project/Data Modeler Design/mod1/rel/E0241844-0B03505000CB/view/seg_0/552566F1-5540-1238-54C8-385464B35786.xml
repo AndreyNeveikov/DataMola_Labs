@@ -1,0 +1,152 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableView class="oracle.dbtools.crest.model.design.relational.TableView" directorySegmentName="seg_0" id="552566F1-5540-1238-54C8-385464B35786" schemaObject="D801972F-762E-00A4-DAD0-299057A0321E" name="W_EMPLOYEE_PROMOTION">
+<sourceConnName>Andrey Neveykov -  Remote</sourceConnName>
+<sourceObjSchema>DM_ORDERS</sourceObjSchema>
+<sourceObjName>W_EMPLOYEE_PROMOTION</sourceObjName>
+<createdBy>User</createdBy>
+<createdTime>2022-07-29 17:30:37 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+<userDefined>true</userDefined>
+<userDefinedSQL><![CDATA[CREATE OR REPLACE VIEW W_EMPLOYEE_PROMOTION
+AS 
+SELECT /*+ PARALLEL(4) */     
+    employee_name                 ,
+    employee_surname              ,
+    employee_patronymic           ,
+    position_now                  ,
+    position_old                  ,
+    position_change_date          ,
+    salary                        ,
+    bonus                         ,
+    work_length                   
+    FROM DW_DATA.t_dw_employees]]></userDefinedSQL>
+<parsed>true</parsed>
+<viewElements>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="EMPLOYEE_NAME" id="AEF398E2-18AB-082A-F37D-1BEDBC500837">
+<sourceConnName>Andrey Neveykov -  Remote</sourceConnName>
+<sourceObjSchema>W_EMPLOYEE_PROMOTION</sourceObjSchema>
+<sourceObjName>EMPLOYEE_NAME</sourceObjName>
+<createdBy>User</createdBy>
+<createdTime>2022-07-29 17:30:37 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>EMPLOYEE_NAME</alias>
+<dataType>VARCHAR2 (15 BYTE)</dataType>
+<headerAlias>EMPLOYEE_NAME</headerAlias>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="EMPLOYEE_SURNAME" id="BEC30073-BB9A-B91A-C300-B2B9173DC785">
+<sourceConnName>Andrey Neveykov -  Remote</sourceConnName>
+<sourceObjSchema>W_EMPLOYEE_PROMOTION</sourceObjSchema>
+<sourceObjName>EMPLOYEE_SURNAME</sourceObjName>
+<createdBy>User</createdBy>
+<createdTime>2022-07-29 17:30:37 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>EMPLOYEE_SURNAME</alias>
+<dataType>VARCHAR2 (15 BYTE)</dataType>
+<headerAlias>EMPLOYEE_SURNAME</headerAlias>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="EMPLOYEE_PATRONYMIC" id="F49CDCE1-1AD6-E1ED-342C-F61E4959B064">
+<sourceConnName>Andrey Neveykov -  Remote</sourceConnName>
+<sourceObjSchema>W_EMPLOYEE_PROMOTION</sourceObjSchema>
+<sourceObjName>EMPLOYEE_PATRONYMIC</sourceObjName>
+<createdBy>User</createdBy>
+<createdTime>2022-07-29 17:30:37 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>EMPLOYEE_PATRONYMIC</alias>
+<dataType>VARCHAR2 (15 BYTE)</dataType>
+<headerAlias>EMPLOYEE_PATRONYMIC</headerAlias>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="POSITION_NOW" id="BD13F26A-B25F-1AB3-CC0F-2E6E15DFE1B1">
+<sourceConnName>Andrey Neveykov -  Remote</sourceConnName>
+<sourceObjSchema>W_EMPLOYEE_PROMOTION</sourceObjSchema>
+<sourceObjName>POSITION_NOW</sourceObjName>
+<createdBy>User</createdBy>
+<createdTime>2022-07-29 17:30:37 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>POSITION_NOW</alias>
+<dataType>VARCHAR2 (30 BYTE)</dataType>
+<headerAlias>POSITION_NOW</headerAlias>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="POSITION_OLD" id="85A20A7B-06A5-6739-A9A8-8AD40AE7BAE9">
+<sourceConnName>Andrey Neveykov -  Remote</sourceConnName>
+<sourceObjSchema>W_EMPLOYEE_PROMOTION</sourceObjSchema>
+<sourceObjName>POSITION_OLD</sourceObjName>
+<createdBy>User</createdBy>
+<createdTime>2022-07-29 17:30:37 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>POSITION_OLD</alias>
+<dataType>VARCHAR2 (30 BYTE)</dataType>
+<headerAlias>POSITION_OLD</headerAlias>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="POSITION_CHANGE_DATE" id="96241240-8C08-1060-D8FC-D4C7EBF44E1D">
+<sourceConnName>Andrey Neveykov -  Remote</sourceConnName>
+<sourceObjSchema>W_EMPLOYEE_PROMOTION</sourceObjSchema>
+<sourceObjName>POSITION_CHANGE_DATE</sourceObjName>
+<createdBy>User</createdBy>
+<createdTime>2022-07-29 17:30:37 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>POSITION_CHANGE_DATE</alias>
+<dataType>DATE</dataType>
+<headerAlias>POSITION_CHANGE_DATE</headerAlias>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="SALARY" id="568BAA21-03A3-CF60-BBAA-739A536E6F75">
+<sourceConnName>Andrey Neveykov -  Remote</sourceConnName>
+<sourceObjSchema>W_EMPLOYEE_PROMOTION</sourceObjSchema>
+<sourceObjName>SALARY</sourceObjName>
+<createdBy>User</createdBy>
+<createdTime>2022-07-29 17:30:37 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>SALARY</alias>
+<dataType>FLOAT (126)</dataType>
+<headerAlias>SALARY</headerAlias>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="BONUS" id="8D7BFD9D-271C-A9C0-7CE3-6EA6D11509E5">
+<sourceConnName>Andrey Neveykov -  Remote</sourceConnName>
+<sourceObjSchema>W_EMPLOYEE_PROMOTION</sourceObjSchema>
+<sourceObjName>BONUS</sourceObjName>
+<createdBy>User</createdBy>
+<createdTime>2022-07-29 17:30:37 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>BONUS</alias>
+<dataType>FLOAT (126)</dataType>
+<headerAlias>BONUS</headerAlias>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="WORK_LENGTH" id="A45AF804-078F-D0D1-D54A-56C11AEB89E5">
+<sourceConnName>Andrey Neveykov -  Remote</sourceConnName>
+<sourceObjSchema>W_EMPLOYEE_PROMOTION</sourceObjSchema>
+<sourceObjName>WORK_LENGTH</sourceObjName>
+<createdBy>User</createdBy>
+<createdTime>2022-07-29 17:30:37 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>WORK_LENGTH</alias>
+<dataType>NUMBER</dataType>
+<headerAlias>WORK_LENGTH</headerAlias>
+<reference>false</reference>
+</viewElement>
+</viewElements>
+</TableView>

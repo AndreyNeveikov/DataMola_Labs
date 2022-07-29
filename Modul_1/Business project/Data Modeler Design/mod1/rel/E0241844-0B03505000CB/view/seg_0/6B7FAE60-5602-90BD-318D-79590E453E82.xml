@@ -1,0 +1,92 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableView class="oracle.dbtools.crest.model.design.relational.TableView" directorySegmentName="seg_0" id="6B7FAE60-5602-90BD-318D-79590E453E82" schemaObject="D801972F-762E-00A4-DAD0-299057A0321E" name="W_ORDER_COSTS">
+<sourceConnName>Andrey Neveykov -  Remote</sourceConnName>
+<sourceObjSchema>DM_ORDERS</sourceObjSchema>
+<sourceObjName>W_ORDER_COSTS</sourceObjName>
+<createdBy>User</createdBy>
+<createdTime>2022-07-29 17:30:37 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+<userDefined>true</userDefined>
+<userDefinedSQL><![CDATA[CREATE OR REPLACE VIEW W_ORDER_COSTS
+AS 
+SELECT /*+ PARALLEL(4) */     
+            product_costs,
+            fuel_costs,
+            vehicle_depreciation,
+            insurance_cost,
+            unexpected_expenses            
+  FROM DW_DATA.t_dw_paybacks]]></userDefinedSQL>
+<parsed>true</parsed>
+<viewElements>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="PRODUCT_COSTS" id="636C01A6-BD0D-82B2-C918-CFE324A4AE54">
+<sourceConnName>Andrey Neveykov -  Remote</sourceConnName>
+<sourceObjSchema>W_ORDER_COSTS</sourceObjSchema>
+<sourceObjName>PRODUCT_COSTS</sourceObjName>
+<createdBy>User</createdBy>
+<createdTime>2022-07-29 17:30:37 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>PRODUCT_COSTS</alias>
+<dataType>FLOAT (126)</dataType>
+<headerAlias>PRODUCT_COSTS</headerAlias>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="FUEL_COSTS" id="29355A5F-0DA2-1976-2E30-C39528186A6B">
+<sourceConnName>Andrey Neveykov -  Remote</sourceConnName>
+<sourceObjSchema>W_ORDER_COSTS</sourceObjSchema>
+<sourceObjName>FUEL_COSTS</sourceObjName>
+<createdBy>User</createdBy>
+<createdTime>2022-07-29 17:30:37 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>FUEL_COSTS</alias>
+<dataType>FLOAT (126)</dataType>
+<headerAlias>FUEL_COSTS</headerAlias>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="VEHICLE_DEPRECIATION" id="09D93C24-51B3-A81E-C006-C6966328F3F1">
+<sourceConnName>Andrey Neveykov -  Remote</sourceConnName>
+<sourceObjSchema>W_ORDER_COSTS</sourceObjSchema>
+<sourceObjName>VEHICLE_DEPRECIATION</sourceObjName>
+<createdBy>User</createdBy>
+<createdTime>2022-07-29 17:30:37 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>VEHICLE_DEPRECIATION</alias>
+<dataType>FLOAT (126)</dataType>
+<headerAlias>VEHICLE_DEPRECIATION</headerAlias>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="INSURANCE_COST" id="EE569B7C-F3FF-F83C-B318-AC8AE9B5BBD6">
+<sourceConnName>Andrey Neveykov -  Remote</sourceConnName>
+<sourceObjSchema>W_ORDER_COSTS</sourceObjSchema>
+<sourceObjName>INSURANCE_COST</sourceObjName>
+<createdBy>User</createdBy>
+<createdTime>2022-07-29 17:30:37 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>INSURANCE_COST</alias>
+<dataType>FLOAT (126)</dataType>
+<headerAlias>INSURANCE_COST</headerAlias>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="UNEXPECTED_EXPENSES" id="49CB7852-E06B-ECCE-BFE6-B5F77585E356">
+<sourceConnName>Andrey Neveykov -  Remote</sourceConnName>
+<sourceObjSchema>W_ORDER_COSTS</sourceObjSchema>
+<sourceObjName>UNEXPECTED_EXPENSES</sourceObjName>
+<createdBy>User</createdBy>
+<createdTime>2022-07-29 17:30:37 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>UNEXPECTED_EXPENSES</alias>
+<dataType>FLOAT (126)</dataType>
+<headerAlias>UNEXPECTED_EXPENSES</headerAlias>
+<reference>false</reference>
+</viewElement>
+</viewElements>
+</TableView>

@@ -1,0 +1,9 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<UserOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UserOraclev10g" name="SA_ORDERS" directorySegmentName="seg_0" id="BDF9B1E4-EF0E-DD5A-DFFB-65F02AA9B5FE">
+<sourceConnName>Andrey Neveykov -  Remote</sourceConnName>
+<sourceObjName>SA_ORDERS</sourceObjName>
+<createdBy>User</createdBy>
+<createdTime>2022-07-29 16:17:09 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+<schemaObject>72F2869A-5A2C-B235-15ED-FD8AF59C996F</schemaObject>
+</UserOraclev10g>

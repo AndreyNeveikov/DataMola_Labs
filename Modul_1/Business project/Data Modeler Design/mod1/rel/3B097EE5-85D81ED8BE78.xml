@@ -1,0 +1,15 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<relationalModel class="oracle.dbtools.crest.model.design.relational.RelationalDesign" name="Andrey Neveykov -  Remote(2)" id="3B097EE5-AC96-ECD6-B964-85D81ED8BE78" mainViewID="A20BEEAE-20E4-8279-22A7-CFA13D09E1F0">
+<createdBy>User</createdBy>
+<createdTime>2022-07-29 16:43:38 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+<selectedRDBMSSite>01F6E6D1-21D0-CFBD-ABDD-3988D1813575</selectedRDBMSSite>
+<importConnectionStamps>
+<importConnectionStamp class="oracle.dbtools.crest.imports.DBConnectionStamp">
+<connName>Andrey Neveykov -  Remote</connName>
+<connUser>ANeveykov</connUser>
+<connType>1</connType>
+</importConnectionStamp>
+</importConnectionStamps>
+</relationalModel>

@@ -1,0 +1,224 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="8590BE0F-B19D-8446-F0B3-DF4DC240BDB7" schemaObject="2689BD84-74A9-B678-B88F-2C4303E36B45" name="T_DW_CLEANSING_CLIENT_CURRENCI_ORDER">
+<sourceConnName>Andrey Neveykov -  Remote</sourceConnName>
+<sourceObjSchema>DW_CL</sourceObjSchema>
+<sourceObjName>T_DW_CLEANSING_CLIENT_CURRENCI_ORDER</sourceObjName>
+<createdBy>User</createdBy>
+<createdTime>2022-07-29 16:43:39 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CLIENT_NAME" id="B5A48CC9-403D-80DA-ECB5-1C852D3148B8">
+<sourceConnName>Andrey Neveykov -  Remote</sourceConnName>
+<sourceObjSchema>T_DW_CLEANSING_CLIENT_CURRENCI_ORDER</sourceObjSchema>
+<sourceObjName>CLIENT_NAME</sourceObjName>
+<createdBy>User</createdBy>
+<createdTime>2022-07-29 16:43:39 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15 BYTE</dataTypeSize>
+<ownDataTypeParameters>15 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CLIENT_SURNAME" id="4F044014-8DC9-78A7-ED20-7B5655E7DA4E">
+<sourceConnName>Andrey Neveykov -  Remote</sourceConnName>
+<sourceObjSchema>T_DW_CLEANSING_CLIENT_CURRENCI_ORDER</sourceObjSchema>
+<sourceObjName>CLIENT_SURNAME</sourceObjName>
+<createdBy>User</createdBy>
+<createdTime>2022-07-29 16:43:39 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15 BYTE</dataTypeSize>
+<ownDataTypeParameters>15 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CLIENT_PATRONYMIC" id="907A9086-BA0B-CA52-617B-F83E153619FC">
+<sourceConnName>Andrey Neveykov -  Remote</sourceConnName>
+<sourceObjSchema>T_DW_CLEANSING_CLIENT_CURRENCI_ORDER</sourceObjSchema>
+<sourceObjName>CLIENT_PATRONYMIC</sourceObjName>
+<createdBy>User</createdBy>
+<createdTime>2022-07-29 16:43:39 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15 BYTE</dataTypeSize>
+<ownDataTypeParameters>15 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PHONE_NUMBER" id="6C66347D-C1CB-0C70-2E0D-561C09147662">
+<sourceConnName>Andrey Neveykov -  Remote</sourceConnName>
+<sourceObjSchema>T_DW_CLEANSING_CLIENT_CURRENCI_ORDER</sourceObjSchema>
+<sourceObjName>PHONE_NUMBER</sourceObjName>
+<createdBy>User</createdBy>
+<createdTime>2022-07-29 16:43:39 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CLIENT_ADDRESS" id="3AD09913-E52D-FD2E-4463-C88D98CCE643">
+<sourceConnName>Andrey Neveykov -  Remote</sourceConnName>
+<sourceObjSchema>T_DW_CLEANSING_CLIENT_CURRENCI_ORDER</sourceObjSchema>
+<sourceObjName>CLIENT_ADDRESS</sourceObjName>
+<createdBy>User</createdBy>
+<createdTime>2022-07-29 16:43:39 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PAYMENT_METHOD" id="08285FE9-0C07-D3A6-1BA6-ADED9422A694">
+<sourceConnName>Andrey Neveykov -  Remote</sourceConnName>
+<sourceObjSchema>T_DW_CLEANSING_CLIENT_CURRENCI_ORDER</sourceObjSchema>
+<sourceObjName>PAYMENT_METHOD</sourceObjName>
+<createdBy>User</createdBy>
+<createdTime>2022-07-29 16:43:39 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15 BYTE</dataTypeSize>
+<ownDataTypeParameters>15 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CURRENCI_ID" id="319AA2B4-F31C-2E5A-9C5F-C1C929265643">
+<sourceConnName>Andrey Neveykov -  Remote</sourceConnName>
+<sourceObjSchema>T_DW_CLEANSING_CLIENT_CURRENCI_ORDER</sourceObjSchema>
+<sourceObjName>CURRENCI_ID</sourceObjName>
+<createdBy>User</createdBy>
+<createdTime>2022-07-29 16:43:39 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>*</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,*,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CURRENCI_NAME" id="70B50AB3-5364-68B0-E83A-0C561426C02F">
+<sourceConnName>Andrey Neveykov -  Remote</sourceConnName>
+<sourceObjSchema>T_DW_CLEANSING_CLIENT_CURRENCI_ORDER</sourceObjSchema>
+<sourceObjName>CURRENCI_NAME</sourceObjName>
+<createdBy>User</createdBy>
+<createdTime>2022-07-29 16:43:39 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>25 BYTE</dataTypeSize>
+<ownDataTypeParameters>25 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DIRECT_EXCHANGE_RATE" id="00C8DF8E-EA0F-B8DA-DD92-750DDBD40D2A">
+<sourceConnName>Andrey Neveykov -  Remote</sourceConnName>
+<sourceObjSchema>T_DW_CLEANSING_CLIENT_CURRENCI_ORDER</sourceObjSchema>
+<sourceObjName>DIRECT_EXCHANGE_RATE</sourceObjName>
+<createdBy>User</createdBy>
+<createdTime>2022-07-29 16:43:39 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<dataTypePrecision>126</dataTypePrecision>
+<ownDataTypeParameters>,126,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="REVERSE_EXCHANGE_RATE" id="0843794D-2FD2-88CF-0334-B6F69EDA8871">
+<sourceConnName>Andrey Neveykov -  Remote</sourceConnName>
+<sourceObjSchema>T_DW_CLEANSING_CLIENT_CURRENCI_ORDER</sourceObjSchema>
+<sourceObjName>REVERSE_EXCHANGE_RATE</sourceObjName>
+<createdBy>User</createdBy>
+<createdTime>2022-07-29 16:43:39 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<dataTypePrecision>126</dataTypePrecision>
+<ownDataTypeParameters>,126,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PRODUCT_NAME" id="95062B5F-D9EB-28F0-E378-B00809D94032">
+<sourceConnName>Andrey Neveykov -  Remote</sourceConnName>
+<sourceObjSchema>T_DW_CLEANSING_CLIENT_CURRENCI_ORDER</sourceObjSchema>
+<sourceObjName>PRODUCT_NAME</sourceObjName>
+<createdBy>User</createdBy>
+<createdTime>2022-07-29 16:43:39 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15 BYTE</dataTypeSize>
+<ownDataTypeParameters>15 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ORDER_PRICE" id="A5EBFEB6-8B42-A6B8-9839-561269CE0B1E">
+<sourceConnName>Andrey Neveykov -  Remote</sourceConnName>
+<sourceObjSchema>T_DW_CLEANSING_CLIENT_CURRENCI_ORDER</sourceObjSchema>
+<sourceObjName>ORDER_PRICE</sourceObjName>
+<createdBy>User</createdBy>
+<createdTime>2022-07-29 16:43:39 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<dataTypePrecision>126</dataTypePrecision>
+<ownDataTypeParameters>,126,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ORDER_STATUS" id="AE2C1D82-A4E7-1B48-7AEE-6B9A3263265C">
+<sourceConnName>Andrey Neveykov -  Remote</sourceConnName>
+<sourceObjSchema>T_DW_CLEANSING_CLIENT_CURRENCI_ORDER</sourceObjSchema>
+<sourceObjName>ORDER_STATUS</sourceObjName>
+<createdBy>User</createdBy>
+<createdTime>2022-07-29 16:43:39 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15 BYTE</dataTypeSize>
+<ownDataTypeParameters>15 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ORDER_DATE" id="1525829C-B027-9A90-ECCE-EEF74E9F8588">
+<sourceConnName>Andrey Neveykov -  Remote</sourceConnName>
+<sourceObjSchema>T_DW_CLEANSING_CLIENT_CURRENCI_ORDER</sourceObjSchema>
+<sourceObjName>ORDER_DATE</sourceObjName>
+<createdBy>User</createdBy>
+<createdTime>2022-07-29 16:43:39 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="RECEIVING_DATE" id="5BCB32D3-1616-EFA3-BD0A-B2FB87184D1F">
+<sourceConnName>Andrey Neveykov -  Remote</sourceConnName>
+<sourceObjSchema>T_DW_CLEANSING_CLIENT_CURRENCI_ORDER</sourceObjSchema>
+<sourceObjName>RECEIVING_DATE</sourceObjName>
+<createdBy>User</createdBy>
+<createdTime>2022-07-29 16:43:39 UTC</createdTime>
+<ownerDesignName>mod1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15 BYTE</dataTypeSize>
+<ownDataTypeParameters>15 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+</Table>
