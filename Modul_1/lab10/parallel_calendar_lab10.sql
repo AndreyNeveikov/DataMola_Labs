@@ -61,7 +61,7 @@ SELECT * FROM calendar_lab10
 WHERE day_name IN('Понедельник', 'Пятница', 'Воскресенье')
 ORDER BY time_id DESC;
 
-SELECT /*+ parallel(TIMES, 4)*/* FROM calendar_lab10
+SELECT /*+ parallel(calendar_lab10, 4)*/* FROM calendar_lab10
 WHERE day_name IN('Понедельник', 'Пятница', 'Воскресенье')
 ORDER BY time_id DESC;
 
@@ -69,9 +69,9 @@ ORDER BY time_id DESC;
 DELETE FROM calendar_lab10
 WHERE day_name IN('Понедельник', 'Пятница', 'Воскресенье');
 
-DELETE /*+ parallel(TIMES, 4)*/ FROM calendar_lab10
+DELETE /*+ parallel(calendar_lab10, 4)*/ FROM calendar_lab10
 WHERE day_name IN('Понедельник', 'Пятница', 'Воскресенье');
 
 /*Task_3*/
 DROP TABLE calendar_lab10;
-DROP TABLE  /*+ parallel(TIMES, 4)*/ calendar_lab10;
+DROP TABLE  /*+ parallel(calendar_lab10, 4)*/ calendar_lab10;
