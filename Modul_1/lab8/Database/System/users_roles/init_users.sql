@@ -28,7 +28,7 @@ CREATE USER SA_CUSTOMERS
   IDENTIFIED BY "%PWD%"
     DEFAULT TABLESPACE ts_sa_customers_data_01;
 
-GRANT CONNECT,RESOURCE TO SA_CUSTOMERS;
+GRANT UNLIMITED TABLESPACE TO SA_CUSTOMERS;
 
 --==============================================================
 -- User: SA_ORDERS
@@ -37,7 +37,7 @@ CREATE USER SA_ORDERS
   IDENTIFIED BY "%PWD%"
     DEFAULT TABLESPACE ts_sa_orders_data_01;
 
-GRANT CONNECT,RESOURCE TO SA_ORDERS;
+GRANT UNLIMITED TABLESPACE TO SA_ORDERS;
 
 --==============================================================
 -- User: SA_CURRENCIES
@@ -46,8 +46,7 @@ CREATE USER SA_CURRENCIES
   IDENTIFIED BY "%PWD%"
     DEFAULT TABLESPACE ts_sa_currencies_data_01;
 
-GRANT CONNECT,RESOURCE TO SA_CURRENCIES;
-
+GRANT UNLIMITED TABLESPACE TO SA_CURRENCIES;
 
 /*Data warehouse Cleansing Level*/
 --==============================================================
@@ -57,7 +56,7 @@ CREATE USER DW_CL
   IDENTIFIED BY "%PWD%"
     DEFAULT TABLESPACE ts_dw_cl_01;
 
-GRANT CONNECT,CREATE VIEW,RESOURCE TO DW_CL;
+GRANT UNLIMITED TABLESPACE TO DW_CL;
 
 
 /*Data warehouse Start Cleansing Level*/
@@ -68,7 +67,7 @@ CREATE USER DW_DATA
   IDENTIFIED BY "%PWD%"
     DEFAULT TABLESPACE ts_dw_data_01;
 
-GRANT CONNECT,CREATE VIEW,RESOURCE TO DW_DATA;
+GRANT UNLIMITED TABLESPACE TO DW_DATA;
 
 
 /*Start Cleansing Level*/
