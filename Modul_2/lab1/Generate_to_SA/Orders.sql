@@ -1,4 +1,13 @@
 alter session set current_schema=SA_ORDERS;
+SELECT
+    *
+FROM
+    t_sa_orders;
+    
+commit;
+    
+    
+alter session set current_schema=SA_ORDERS;
 drop table t_sa_orders;
 
 alter session set current_schema=SA_ORDERS;
@@ -145,10 +154,4 @@ INSERT INTO t_sa_orders
         LEFT OUTER JOIN create_product_name   pn ON g.id_fn = pn.id
         LEFT OUTER JOIN create_order_status   st ON g.id_status = st.id
         LEFT OUTER JOIN create_order_date   od  ON g.order_date = od.id;
-
----
-SELECT
-    *
-FROM
-    T_SA_ORDERS;
    

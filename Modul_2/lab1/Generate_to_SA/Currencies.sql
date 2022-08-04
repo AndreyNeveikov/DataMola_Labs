@@ -1,5 +1,10 @@
 alter session set current_schema=SA_CURRENCIES;
---drop table t_sa_currencies;
+drop table t_sa_currencies;
+select
+    *
+from
+    t_sa_currencies;
+commit;
 
 alter session set current_schema=SA_CURRENCIES;
 Create table t_sa_currencies ( 
@@ -94,7 +99,7 @@ INSERT INTO t_sa_currencies
                 FROM
                     dual
                 CONNECT BY
-                    level <= 15000
+                    level <= 50
             ) a
     )
     SELECT
@@ -105,9 +110,4 @@ INSERT INTO t_sa_currencies
     FROM
         create_rates 
         LEFT OUTER JOIN create_currenci_name   ON create_rates.id_create_currenci_name = create_currenci_name.id
-        LEFT OUTER JOIN create_currenci_rate   ON create_rates.id_create_currenci_rate = create_currenci_rate.id;
---
-SELECT
-    *
-FROM
-    t_sa_currencies;   
+        LEFT OUTER JOIN create_currenci_rate   ON create_rates.id_create_currenci_rate = create_currenci_rate.id; 

@@ -1,5 +1,14 @@
 alter session set current_schema=SA_CUSTOMERS;
-drop table t_sa_customers;
+--drop table t_sa_customers;
+
+SELECT
+    *
+FROM
+    t_sa_customers
+ORDER BY
+    1; 
+    
+commit;
 
 alter session set current_schema=SA_CUSTOMERS;
 Create table t_sa_customers (       
@@ -346,12 +355,5 @@ INSERT INTO t_sa_customers
         LEFT OUTER JOIN create_client_surname           c_surname           ON cr_customer.id_customer_surname = c_surname.id
         LEFT OUTER JOIN create_client_patronymic        c_patronymic        ON cr_customer.id_customer_patronymic = c_patronymic.id
         LEFT OUTER JOIN create_client_address           c_address           ON cr_customer.id_customer_address = c_address.id
-        LEFT OUTER JOIN create_client_payment_method    c_payment_method    ON cr_customer.id_customer_payment_method = c_payment_method.id;
---
-SELECT
-    *
-FROM
-    t_sa_customers
-ORDER BY
-    1;     
+        LEFT OUTER JOIN create_client_payment_method    c_payment_method    ON cr_customer.id_customer_payment_method = c_payment_method.id;   
 --
