@@ -1,5 +1,5 @@
 alter session set current_schema=SA_CUSTOMERS;
---drop table t_sa_customers;
+drop table t_sa_customers;
 
 SELECT
     *
@@ -18,7 +18,7 @@ client_patronymic             VARCHAR2(15)     not null,
 phone_number                  NUMBER           not null,
 client_address                VARCHAR2(50)     not null,
 payment_method                VARCHAR2(15)     not null
-)
+);
 
 --
 alter session set current_schema=SA_CUSTOMERS;
@@ -326,12 +326,12 @@ INSERT INTO t_sa_customers
     ), create_customer AS (
         SELECT
             a.*
-          , trunc(dbms_random.value(1, 14))                 AS id_customer_name
-          , trunc(dbms_random.value(1, 11))                 AS id_customer_surname
-          , trunc(dbms_random.value(1, 11))                 AS id_customer_patronymic
-          , trunc(dbms_random.value(1000000, 9999999))      AS phone_number
-          , trunc(dbms_random.value(1, 11))                 AS id_customer_address
-          , trunc(dbms_random.value(1, 3))                  AS id_customer_payment_method
+          , trunc(dbms_random.value(1, 14))                  AS id_customer_name
+          , trunc(dbms_random.value(1, 11))                  AS id_customer_surname
+          , trunc(dbms_random.value(1, 11))                  AS id_customer_patronymic
+          , trunc(dbms_random.value(1000001, 9999999))       AS phone_number
+          , trunc(dbms_random.value(1, 11))                  AS id_customer_address
+          , trunc(dbms_random.value(1, 3))                   AS id_customer_payment_method
         FROM
             (
                 SELECT

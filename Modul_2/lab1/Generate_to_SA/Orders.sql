@@ -122,7 +122,7 @@ INSERT INTO t_sa_orders
         SELECT 
         1 as id,
         TO_DATE(TRUNC(DBMS_RANDOM.VALUE(
-            TO_CHAR(TO_DATE('01-01-2004','dd-mm-yyyy'),'J'),
+            TO_CHAR(TO_DATE('01-01-2020','dd-mm-yyyy'),'J'),
              TO_CHAR(TO_DATE('01-01-2022','dd-mm-yyyy'),'J'))),'J') as a
         FROM DUAL
         CONNECT BY level <= 10000
@@ -130,7 +130,7 @@ INSERT INTO t_sa_orders
         SELECT
             a.*
           , trunc(dbms_random.value(1, 5))           AS id_fn
-          , trunc(dbms_random.value(50, 1200))       AS s_sum
+          , trunc(dbms_random.value(100, 600))       AS s_sum
           , trunc(dbms_random.value(1, 3))           AS id_status
           , trunc(dbms_random.value(1, 1))           AS order_date
         FROM

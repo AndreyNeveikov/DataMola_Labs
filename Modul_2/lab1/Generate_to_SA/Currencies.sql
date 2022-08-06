@@ -1,5 +1,5 @@
 alter session set current_schema=SA_CURRENCIES;
-drop table t_sa_currencies;
+--drop table t_sa_currencies;
 select
     *
 from
