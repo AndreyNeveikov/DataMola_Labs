@@ -61,3 +61,5 @@ INSERT INTO t_sa_transactions
  INNER JOIN SA_CURRENCIES.t_sa_financial_calendar ON date_id = order_date
 WHERE order_date > TO_DATE( '01.01.20', 'MM/DD/YY' ) AND order_date < TO_DATE( '04.01.22', 'MM/DD/YY' )
 );
+
+commit;

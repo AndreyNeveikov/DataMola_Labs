@@ -72,8 +72,12 @@ FROM
     SA_ORDERS.t_sa_transactions
 WHERE 
     date_id  >= TO_DATE( '01.01.20', 'MM/DD/YY' ) AND date_id  < TO_DATE( '02.01.20', 'MM/DD/YY' )
-GROUP BY ROLLUP
-    (product_name, client_address, calendar_month_number);
+GROUP BY GROUPING SETS
+    (
+    (product_name, client_address, calendar_month_number),
+    (product_name, client_address),
+    (product_name)
+    );
     
 ---------------------------------------------------------------------------------------------------------
 
@@ -84,7 +88,11 @@ FROM
 WHERE 
     date_id >= TO_DATE( '01.01.20', 'MM/DD/YY' ) AND date_id  < TO_DATE( '01.03.20', 'MM/DD/YY' )
 GROUP BY GROUPING SETS
-    (product_name, order_status, calendar_month_number);
+    (
+    (product_name, order_status, calendar_month_number),
+    (product_name, order_status),
+    (product_name)
+    );
 
 ---------------------------------------------------------------------------------------------------------
 
@@ -96,7 +104,7 @@ FROM
     SA_ORDERS.t_sa_transactions
 WHERE 
     order_date  >= TO_DATE( '04.01.20', 'MM/DD/YY' ) AND order_date  < TO_DATE( '04.01.21', 'MM/DD/YY' )
-GROUP BY GROUPING SETS
+GROUP BY ROLLUP
     (order_date, calendar_month_number, fin_quarter_number, fin_year);
     
 ---------------------------------------------------------------------------------------------------------
@@ -107,6 +115,6 @@ FROM
     SA_ORDERS.t_sa_transactions
 WHERE 
     date_id >= TO_DATE( '04.01.20', 'MM/DD/YY' ) AND date_id  < TO_DATE( '04.01.21', 'MM/DD/YY' )
-GROUP BY GROUPING SETS
+GROUP BY ROLLUP
     (order_date, calendar_month_number, fin_quarter_number, fin_year);
     

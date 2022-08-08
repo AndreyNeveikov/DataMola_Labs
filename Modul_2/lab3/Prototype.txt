@@ -1,0 +1,62 @@
+CREATE USER SB_MBackUp
+  IDENTIFIED BY "%PWD%"
+    DEFAULT TABLESPACE ts_sa_orders_data_01;
+
+GRANT UNLIMITED TABLESPACE TO SB_MBackUp;
+--------------------------------------------------------------------------------
+
+alter session set current_schema=u_dw_references;
+drop table geo_denormalized_data;
+
+--------------------------------------------------------------------------------
+alter session set current_schema=u_dw_references;
+create table geo_denormalized_data AS 
+select 
+    tgo.geo_id, tgo.geo_type_id, tgo.geo_code_id,
+    tgt.geo_type_code, tgt.geo_type_desc,
+    lcgs.grp_system_id, lcgs.grp_system_code, lcgs.grp_system_desc, lcgs.localization_id,
+    lcg.group_id, lcg.group_code, lcg.group_desc,
+    lcsg.sub_group_id, lcsg.sub_group_code, lcsg.sub_group_desc,
+    lc.country_id, lc.country_code_a2, lc.country_code_a3, lc.country_desc,
+    lgr.region_id, lgr.region_code, lgr.region_desc,
+    lgp.part_id, lgp.part_code, lgp.part_desc,
+    lgs.geo_system_id, lgs.geo_system_code, lgs.geo_system_desc,
+    tgol.parent_geo_id, tgol.child_geo_id, tgol.link_type_id                  
+from 
+    t_geo_objects tgo
+    
+    LEFT OUTER JOIN t_geo_types tgt ON tgo.geo_type_id = tgt.geo_type_id
+    LEFT OUTER JOIN t_geo_object_links tgol ON tgo.geo_id = tgol.parent_geo_id
+    LEFT OUTER JOIN lc_cntr_group_systems lcgs ON tgo.geo_id = lcgs.geo_id
+    LEFT OUTER JOIN lc_cntr_groups lcg ON tgo.geo_id = lcg.geo_id
+    LEFT OUTER JOIN lc_cntr_sub_groups lcsg ON tgo.geo_id = lcsg.geo_id 
+    LEFT OUTER JOIN lc_countries lc ON tgo.geo_id = lc.geo_id
+    LEFT OUTER JOIN lc_geo_regions lgr ON tgo.geo_id = lgr.geo_id
+    LEFT OUTER JOIN lc_geo_parts lgp ON tgo.geo_id = lgp.geo_id
+    LEFT OUTER JOIN lc_geo_systems lgs ON tgo.geo_id = lgs.geo_id;    
+    
+commit;
+--------------------------------------------------------------------------------
+
+alter session set current_schema=u_dw_references;
+select 
+    geo_id, geo_type_id, geo_code_id, geo_type_code, level, DECODE ( LEVEL,  1, 'ROOT',  2, 'BRANCH',  'LEAF' ) AS id_type
+from
+    geo_denormalized_data --t_geo_object_links --geo_denormalized_data;
+START WITH 
+    geo_type_code = 'GEO SYSTEM'
+CONNECT BY PRIOR 
+    child_geo_id = parent_geo_id;  
+--------------------------------------------------------------------------------
+alter session set current_schema=u_dw_references;
+select 
+    geo_id, geo_type_id, geo_code_id, geo_type_code, child_geo_id, parent_geo_id
+from
+    geo_denormalized_data;
+    
+--------------------------------------------------------------------------------
+alter session set current_schema=u_dw_references;
+select
+    last_name "Employee", CONNECT_BY_ROOT last_name "Manager"
+from
+    t_geo_object_links;    
