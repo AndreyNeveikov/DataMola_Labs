@@ -129,8 +129,8 @@ INSERT INTO t_sa_orders
     ), cte_gen AS (
         SELECT
             a.*
-          , trunc(dbms_random.value(1, 5))           AS id_fn
-          , trunc(dbms_random.value(100, 600))       AS s_sum
+          , trunc(dbms_random.value(1, 5))           AS id_pn
+          , trunc(dbms_random.value(100, 600))       AS price
           , trunc(dbms_random.value(1, 3))           AS id_status
           , trunc(dbms_random.value(1, 1))           AS order_date
         FROM
@@ -145,13 +145,13 @@ INSERT INTO t_sa_orders
     )
     SELECT
         pn.a
-      , s_sum
+      , price
       , st.a
       , od.a
       , TO_DATE(od.a + trunc(dbms_random.value(7, 25)))
     FROM
         cte_gen  g
-        LEFT OUTER JOIN create_product_name   pn ON g.id_fn = pn.id
+        LEFT OUTER JOIN create_product_name   pn ON g.id_pn = pn.id
         LEFT OUTER JOIN create_order_status   st ON g.id_status = st.id
         LEFT OUTER JOIN create_order_date   od  ON g.order_date = od.id;
    
