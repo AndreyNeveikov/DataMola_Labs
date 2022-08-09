@@ -1,0 +1,14 @@
+--alter session set current_schema=DW_CL;
+--drop table t_cl_regions;
+
+alter session set current_schema=DW_CL;
+
+Create table t_cl_regions (
+region_id                     INT              not null,
+region_name                   VARCHAR2(15)     not null,
+country                       VARCHAR2(20)     not null,
+city                          VARCHAR2(20)     not null,
+official_language             VARCHAR2(15)     not null,
+VAT_rate                      FLOAT            not null,
+timezone                      VARCHAR2(10)     not null
+);
