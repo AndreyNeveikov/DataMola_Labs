@@ -1,20 +1,6 @@
 alter session set current_schema=SA_CUSTOMERS;
 drop table t_sa_employees;
 
-SELECT
-    *
-FROM
-    t_sa_employees
-ORDER BY
-    1; 
-    
-commit;
-
-
---------------------------------------------------------------------------------
-alter session set current_schema=SA_CUSTOMERS;
-drop table t_sa_employees;
-
 alter session set current_schema=SA_CUSTOMERS;
 create table t_sa_employees
 (
@@ -243,19 +229,5 @@ CONNECT BY PRIOR
 START WITH 
     manager_id = 0; 
 --------------------------------------------------------------------------------
-
-alter session set current_schema=SA_CUSTOMERS;
-Select Level
-     , employee_id 
-     , Lpad(' ' ,4 * (Level - 1)) || manager_id chief_id
-     , manager_id 
-     , Prior manager_id 
-     , Connect_By_Isleaf  
-     , Connect_By_Root(employee_name) root_chief_name 
-     , Sys_Connect_By_Path(employee_id,'/')
-From   t_sa_employees
-Connect By Nocycle Prior employee_id = manager_id
-Start  With manager_id = 0
-Order  Siblings By employee_name;
 
 commit;

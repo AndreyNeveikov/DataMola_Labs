@@ -1,5 +1,5 @@
 alter session set current_schema=SA_CUSTOMERS;
-drop table t_sa_customers;
+--drop table t_sa_customers;
 
 SELECT
     *
