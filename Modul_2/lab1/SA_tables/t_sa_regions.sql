@@ -8,7 +8,7 @@ region_id                     INT              not null,
 region_name                   VARCHAR2(15)     not null,
 country                       VARCHAR2(20)     not null,
 city                          VARCHAR2(20)     not null,
-use_language             VARCHAR2(15)     not null,
+use_language                  VARCHAR2(15)     not null,
 VAT_rate                      FLOAT            not null,
 timezone                      VARCHAR2(10)     not null
 );
