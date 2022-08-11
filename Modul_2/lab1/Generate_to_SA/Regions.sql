@@ -1,6 +1,6 @@
 alter session set current_schema=SA_ORDERS;
 SELECT
-    region_id
+    count(region_id)
 FROM
     t_sa_regions;
     
@@ -199,23 +199,8 @@ INSERT INTO t_sa_regions
         SELECT
             a.*
           , trunc(dbms_random.value(1, 5))           AS id_region
-          , ( CASE
-                WHEN id_region = 1 THEN trunc(dbms_random.value(1, 3))
-                WHEN id_region = 2 THEN trunc(dbms_random.value(4, 5))
-                WHEN id_region = 3 THEN 6
-                WHEN id_region = 4 THEN 7
-                WHEN id_region = 5 THEN 8
-        END ) id_country
-          , ( CASE
-                WHEN id_country = 1 THEN trunc(dbms_random.value(1, 2))
-                WHEN id_country = 2 THEN trunc(dbms_random.value(3, 5))
-                WHEN id_country = 3 THEN trunc(dbms_random.value(6, 7))
-                WHEN id_country = 4 THEN 8
-                WHEN id_country = 5 THEN 9
-                WHEN id_country = 6 THEN 10
-                WHEN id_country = 7 THEN 11
-                WHEN id_country = 8 THEN 12
-        END ) id_city
+          , trunc(dbms_random.value(1, 8))           AS id_country
+          , trunc(dbms_random.value(1, 12))          AS id_city
         FROM
             (
                 SELECT
@@ -223,7 +208,7 @@ INSERT INTO t_sa_regions
                 FROM
                     dual
                 CONNECT BY
-                    level <= 100
+                    level <= 1500
             ) a
     )
     SELECT
@@ -238,5 +223,10 @@ INSERT INTO t_sa_regions
         cte_gen  g
         LEFT OUTER JOIN create_region    rg ON g.id_region = rg.id
         LEFT OUTER JOIN create_country   cn ON g.id_country = cn.id
-        LEFT OUTER JOIN create_city      ct ON g.id_city = ct.id;
+        LEFT OUTER JOIN create_city      ct ON g.id_city = ct.id
+    WHERE concat(concat(id_region, id_country), id_city) IN 
+            (111, 112, 123, 124, 125, 136, 137, 248, 259, 3610, 4711, 5812);
+
    
+select *
+from t_sa_regions;
