@@ -25,7 +25,7 @@ days_in_fin_month             VARCHAR2(2)  ,
 end_of_fin_month              DATE         ,
 end_of_fin_quarter            VARCHAR2(32) ,
 fin_quarter_number            VARCHAR2(1)  , 
-fin_year                 VARCHAR2(4)  ,  
+fin_year                      VARCHAR2(4)  ,  
 days_in_cal_year              NUMBER            
 );
 
@@ -50,8 +50,8 @@ INSERT INTO t_sa_financial_calendar (
 )
 SELECT 
   TRUNC( sd + rn ) date_id,                 
-  TRUNC( sd ) beg_of_fin_year,           
-  TO_CHAR( sd + 364 ) end_of_fin_year,          
+  TRUNC(TO_DATE( '04/01/' || TO_CHAR( sd + rn, 'YYYY' ), 'MM/DD/YYYY' )) beg_of_fin_year,           
+  TO_CHAR((TO_DATE( '04/01/' || TO_CHAR( sd + rn + 364, 'YYYY' ), 'MM/DD/YYYY' ))) end_of_fin_year,          
   TO_CHAR( sd + rn, 'fmDay' ) day_name,                
   TO_CHAR( sd + rn, 'D' ) day_number_in_week,                  
   TO_CHAR( sd + rn, 'DD' ) day_number_in_month,              

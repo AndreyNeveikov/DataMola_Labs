@@ -1,9 +1,9 @@
---alter session set current_schema=SA_ORDERS;
---drop table t_sa_regions;
+--alter session set current_schema=DW_CL;
+--drop table t_cl_regions;
 
-alter session set current_schema=SA_ORDERS;
+alter session set current_schema=DW_CL;
 
-Create table t_sa_regions (
+Create table t_cl_regions (
 region_id                     INT              not null,
 region_name                   VARCHAR2(15)     not null,
 country                       VARCHAR2(20)     not null,

@@ -1,6 +1,6 @@
 alter session set current_schema=SA_ORDERS;
 SELECT
-    *
+    count(product_name)
 FROM
     t_sa_orders;
     
