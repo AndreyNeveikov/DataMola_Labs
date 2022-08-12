@@ -5,17 +5,17 @@ alter session set current_schema=SA_CUSTOMERS;
 create table t_sa_employees
 (
  employee_id                   NUMBER(5)        not null, 
- employee_name                 VARCHAR2(15)     not null,
- employee_surname              VARCHAR2(15)     not null,
+ employee_name                 VARCHAR2(10)     not null,
+ employee_surname              VARCHAR2(10)     not null,
  employee_patronymic           VARCHAR2(15)     not null,
- position_now                  VARCHAR2(30)     not null, 
- manager_id                    NUMBER(4)        not null,  
- position_old                  VARCHAR2(30)     not null,
+ position_now                  VARCHAR2(25)     not null, 
+ manager_id                    NUMBER(2)        not null,  
+ position_old                  VARCHAR2(25)     not null,
  position_change_date          DATE             not null,
  hiredate                      DATE             not null,
  salary                        FLOAT            not null,
  bonus                         FLOAT            not null,
- type_of_liability             VARCHAR2(15)     not null,
+ type_of_liability             VARCHAR2(10)     not null,
  vacation_days_number          INT              not null
 );
 
@@ -214,7 +214,7 @@ INSERT INTO t_sa_employees
 --
 
 alter session set current_schema=SA_CUSTOMERS;
-select * from t_sa_employees;
+select count(employee_id) from t_sa_employees;
 commit;
 
 --------------------------------------------------------------------------------

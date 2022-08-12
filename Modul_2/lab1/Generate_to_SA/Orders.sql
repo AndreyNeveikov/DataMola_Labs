@@ -1,6 +1,6 @@
 alter session set current_schema=SA_ORDERS;
 SELECT
-    count(product_name)
+    *
 FROM
     t_sa_orders;
     
@@ -14,7 +14,7 @@ alter session set current_schema=SA_ORDERS;
 Create table t_sa_orders (
 product_name                  VARCHAR2(15)     not null,
 order_price                   FLOAT            not null,
-order_status                  VARCHAR2(15)     not null,
+order_status                  VARCHAR2(10)     not null,
 order_date                    DATE             not null,
 receiving_date                DATE             not null
 );
@@ -125,13 +125,13 @@ INSERT INTO t_sa_orders
             TO_CHAR(TO_DATE('01-01-2020','dd-mm-yyyy'),'J'),
              TO_CHAR(TO_DATE('01-01-2022','dd-mm-yyyy'),'J'))),'J') as a
         FROM DUAL
-        CONNECT BY level <= 10000
+        CONNECT BY level <= 70
     ), cte_gen AS (
         SELECT
             a.*
-          , trunc(dbms_random.value(1, 5))           AS id_pn
+          , trunc(dbms_random.value(1, 13))           AS id_pn
           , trunc(dbms_random.value(100, 600))       AS price
-          , trunc(dbms_random.value(1, 3))           AS id_status
+          , trunc(dbms_random.value(1, 2))           AS id_status
           , trunc(dbms_random.value(1, 1))           AS order_date
         FROM
             (
@@ -140,7 +140,7 @@ INSERT INTO t_sa_orders
                 FROM
                     dual
                 CONNECT BY
-                    level <= 30
+                    level <= 15
             ) a
     )
     SELECT

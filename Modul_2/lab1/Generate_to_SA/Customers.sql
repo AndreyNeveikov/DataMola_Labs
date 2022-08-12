@@ -1,8 +1,9 @@
 alter session set current_schema=SA_CUSTOMERS;
---drop table t_sa_customers;
+drop table t_sa_customers;
 
+alter session set current_schema=SA_CUSTOMERS;
 SELECT
-    *
+    *--count(client_name)
 FROM
     t_sa_customers
 ORDER BY
@@ -12,12 +13,12 @@ commit;
 
 alter session set current_schema=SA_CUSTOMERS;
 Create table t_sa_customers (       
-client_name                   VARCHAR2(50)     not null,
-client_surname                VARCHAR2(50)     not null,
+client_name                   VARCHAR2(15)     not null,
+client_surname                VARCHAR2(15)     not null,
 client_patronymic             VARCHAR2(15)     not null,
-phone_number                  NUMBER           not null,
-client_address                VARCHAR2(50)     not null,
-payment_method                VARCHAR2(15)     not null
+phone_number                  INT              not null,
+client_address                VARCHAR2(25)     not null,
+payment_method                VARCHAR2(6)      not null
 );
 
 --
@@ -339,7 +340,7 @@ INSERT INTO t_sa_customers
                 FROM
                     dual
                 CONNECT BY
-                    level <= 150000
+                    level <= 1500
             ) a
     )
     SELECT

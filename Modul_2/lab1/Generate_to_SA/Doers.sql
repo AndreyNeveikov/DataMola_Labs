@@ -15,7 +15,7 @@ commit;
 alter session set current_schema=SA_ORDERS;
 
 Create table t_sa_doers (
-vehicle_registration_plate    VARCHAR2(15)     not null,
+vehicle_registration_plate    VARCHAR2(8)     not null,
 driving_category              VARCHAR2(20)     not null
 );
 
@@ -24,7 +24,7 @@ INSERT INTO t_sa_doers
     WITH create_driving_category AS (
         SELECT
             1      AS id
-          , 'A'  AS a
+          , 'A,B,BE,C,D,DE'  AS a
         FROM
             dual
         UNION ALL
@@ -99,16 +99,10 @@ INSERT INTO t_sa_doers
           , 'A,B,C,D,BE,CE,DE'  AS a
         FROM
             dual
-        UNION ALL
-        SELECT
-            14      AS id
-          , 'A,B,BE,C,D,DE'  AS a
-        FROM
-            dual
     ), create_doer AS (
         SELECT
             a.*
-          , trunc(dbms_random.value(1, 14))               AS id_driving_category
+          , trunc(dbms_random.value(1, 13))               AS id_driving_category
           , TO_CHAR(concat(concat(trunc(dbms_random.value(1000, 9999)),'AA-'),trunc(dbms_random.value(1, 7)))) AS vehicle_registration_plate
         FROM
             (
@@ -117,7 +111,7 @@ INSERT INTO t_sa_doers
                 FROM
                     dual
                 CONNECT BY
-                    level <= 50
+                    level <= 6
             ) a
     )
     SELECT

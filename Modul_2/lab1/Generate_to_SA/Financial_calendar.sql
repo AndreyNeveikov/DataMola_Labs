@@ -3,9 +3,10 @@ drop table t_sa_financial_calendar;
 
 alter session set current_schema=SA_CURRENCIES;
 select 
-    * 
+    count(date_id ) 
 from
-    t_sa_financial_calendar;
+    t_sa_financial_calendar
+WHERE date_id > TO_DATE( '01.01.20', 'MM/DD/YY' ) AND date_id < TO_DATE( '04.01.22', 'MM/DD/YY' );
     
 commit;
 
@@ -91,5 +92,5 @@ FROM
       TO_DATE( '04/01/2019', 'MM/DD/YYYY' ) sd,
       rownum rn
     FROM dual
-      CONNECT BY level <= 30000
+      CONNECT BY level <= 1000
   );

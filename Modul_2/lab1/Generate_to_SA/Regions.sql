@@ -1,6 +1,6 @@
 alter session set current_schema=SA_ORDERS;
 SELECT
-    count(region_id)
+    *
 FROM
     t_sa_regions;
     
@@ -14,11 +14,11 @@ alter session set current_schema=SA_ORDERS;
 Create table t_sa_regions (
 region_id                     INT              not null,
 region_name                   VARCHAR2(15)     not null,
-country                       VARCHAR2(20)     not null,
-city                          VARCHAR2(20)     not null,
-use_language                  VARCHAR2(15)     not null,
+country                       VARCHAR2(15)     not null,
+city                          VARCHAR2(15)     not null,
+use_language                  VARCHAR2(5)      not null,
 VAT_rate                      FLOAT            not null,
-timezone                      VARCHAR2(10)     not null
+timezone                      VARCHAR2(4)      not null
 );
 
 --
@@ -208,7 +208,7 @@ INSERT INTO t_sa_regions
                 FROM
                     dual
                 CONNECT BY
-                    level <= 1500
+                    level <= 1000
             ) a
     )
     SELECT
