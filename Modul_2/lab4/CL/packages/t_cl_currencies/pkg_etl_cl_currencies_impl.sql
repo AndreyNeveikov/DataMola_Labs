@@ -21,7 +21,7 @@ AS
    EXECUTE IMMEDIATE 'TRUNCATE TABLE DW_CL.t_cl_currencies';
       FOR i IN curs_cl_currencies LOOP
          INSERT INTO DW_CL.t_cl_currencies( 
-                         currency_id
+                         currency_code
                        , currency_name
                        , direct_exchange_rate
                        , reverse_exchange_rate)

@@ -62,7 +62,7 @@ use_language                  VARCHAR2(5)      not null,
 VAT_rate                      FLOAT            not null,
 timezone                      VARCHAR2(4)      not null,
 -----------------------------------------------------------
-currency_id                   INT              not null,
+currency_code                 INT              not null,
 currency_name                 VARCHAR2(7)      not null,
 direct_exchange_rate          FLOAT            not null,
 reverse_exchange_rate         FLOAT            not null,
@@ -100,7 +100,7 @@ INSERT INTO t_cl_transactions /*+ parallel(DW_CL.t_cl_transactions, 4)*/
     WHERE vehicle_registration_plate IN('7506AA-1', '5147AA-4') ) --2    
  INNER JOIN DW_CL.t_cl_paybacks ON customer_payment = order_price --250 
  CROSS JOIN (SELECT * FROM DW_CL.t_cl_regions)--11 
- INNER JOIN DW_CL.t_cl_currencies ON trunc(currency_id/100) = trunc(region_id/100) --5 
+ INNER JOIN DW_CL.t_cl_currencies ON trunc(currency_code/100) = trunc(region_id/100) --5 
  INNER JOIN DW_CL.t_cl_financial_calendar ON date_id = order_date --1000
 WHERE order_date > TO_DATE( '01.01.20', 'MM/DD/YY' ) AND order_date < TO_DATE( '04.01.22', 'MM/DD/YY' )
 ); --1 035 320
