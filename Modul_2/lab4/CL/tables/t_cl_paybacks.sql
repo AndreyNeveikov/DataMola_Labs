@@ -1,5 +1,5 @@
---alter session set current_schema=DW_CL;
---drop table t_cl_paybacks;
+alter session set current_schema=DW_CL;
+drop table t_cl_paybacks;
 
 alter session set current_schema=DW_CL;
 

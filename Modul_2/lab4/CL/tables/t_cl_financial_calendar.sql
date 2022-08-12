@@ -1,5 +1,5 @@
---alter session set current_schema=DW_CL;
---drop table t_cl_financial_calendar;
+alter session set current_schema=DW_CL;
+drop table t_cl_financial_calendar;
 
 alter session set current_schema=DW_CL;
 
