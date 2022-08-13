@@ -8,14 +8,20 @@ AS
    AS   
       CURSOR curs_cl_orders
       IS
-         SELECT DISTINCT 
-                  product_name
+         SELECT DISTINCT
+                  region_id
+                , employee_id
+                , client_id
+                , product_name
                 , order_price
                 , order_status
                 , order_date
                 , receiving_date
            FROM SA_ORDERS.t_sa_orders
-           WHERE product_name IS NOT NULL 
+           WHERE region_id IS NOT NULL 
+           AND employee_id IS NOT NULL
+           AND client_id IS NOT NULL
+           AND product_name IS NOT NULL
            AND order_price IS NOT NULL
            AND order_status IS NOT NULL
            AND order_date IS NOT NULL
@@ -24,12 +30,18 @@ AS
    EXECUTE IMMEDIATE 'TRUNCATE TABLE DW_CL.t_cl_orders';
       FOR i IN curs_cl_orders LOOP
          INSERT INTO DW_CL.t_cl_orders( 
-                         product_name
+                         region_id
+                       , employee_id
+                       , client_id
+                       , product_name
                        , order_price
                        , order_status
                        , order_date
                        , receiving_date)
-              VALUES ( i.product_name
+              VALUES ( i.region_id
+                     , i.employee_id
+                     , i.client_id
+                     , i.product_name
                      , i.order_price 
                      , i.order_status
                      , i.order_date

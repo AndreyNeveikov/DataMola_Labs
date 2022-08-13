@@ -8,8 +8,9 @@ AS
    AS   
       CURSOR curs_cl_doers
       IS
-         SELECT DISTINCT 
-                  vehicle_registration_plate
+         SELECT DISTINCT
+                  doer_id
+                , vehicle_registration_plate
                 , driving_category
            FROM SA_ORDERS.t_sa_doers
            WHERE vehicle_registration_plate IS NOT NULL 
@@ -18,9 +19,11 @@ AS
    EXECUTE IMMEDIATE 'TRUNCATE TABLE DW_CL.t_cl_doers';
       FOR i IN curs_cl_doers LOOP
          INSERT INTO DW_CL.t_cl_doers( 
-                         vehicle_registration_plate
+                         doer_id
+                       , vehicle_registration_plate
                        , driving_category)
-              VALUES ( i.vehicle_registration_plate
+              VALUES ( i.doer_id
+                     , i.vehicle_registration_plate
                      , i.driving_category);
 
          EXIT WHEN curs_cl_doers%NOTFOUND;

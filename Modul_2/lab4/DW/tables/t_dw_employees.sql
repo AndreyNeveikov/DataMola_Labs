@@ -18,4 +18,4 @@ Create table t_dw_employees (
  type_of_liability             VARCHAR2(10)     not null,
  vacation_days_number          INT              not null,
 constraint PK_T_DW_EMPLOYEES primary key (employee_id)
-)
+);

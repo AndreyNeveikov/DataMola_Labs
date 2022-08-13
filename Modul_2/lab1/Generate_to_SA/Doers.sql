@@ -15,7 +15,8 @@ commit;
 alter session set current_schema=SA_ORDERS;
 
 Create table t_sa_doers (
-vehicle_registration_plate    VARCHAR2(8)     not null,
+doer_id                       INT              not null,
+vehicle_registration_plate    VARCHAR2(8)      not null,
 driving_category              VARCHAR2(20)     not null
 );
 
@@ -111,11 +112,12 @@ INSERT INTO t_sa_doers
                 FROM
                     dual
                 CONNECT BY
-                    level <= 6
+                    level <= 150
             ) a
     )
     SELECT
-        vehicle_registration_plate
+        rn
+      , vehicle_registration_plate
       , d_driving_category.a
 
     FROM

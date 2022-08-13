@@ -12,6 +12,9 @@ drop table t_sa_orders;
 
 alter session set current_schema=SA_ORDERS;
 Create table t_sa_orders (
+region_id                     INT              not null,
+employee_id                   INT              not null,
+client_id                     INT              not null,
 product_name                  VARCHAR2(15)     not null,
 order_price                   FLOAT            not null,
 order_status                  VARCHAR2(10)     not null,
@@ -118,6 +121,54 @@ INSERT INTO t_sa_orders
           , 'In process'  AS a
         FROM
             dual
+    ), create_region_id AS (
+        SELECT
+            1         AS id
+          , trunc(dbms_random.value(111, 112))  AS a
+        FROM
+            dual
+        UNION ALL
+        SELECT
+            2          AS id
+          , trunc(dbms_random.value(123, 125))  AS a
+        FROM
+            dual
+        UNION ALL
+        SELECT
+            3        AS id
+          , trunc(dbms_random.value(136, 137))  AS a
+        FROM
+            dual
+        UNION ALL
+        SELECT
+            4          AS id
+          , 248  AS a
+        FROM
+            dual
+        UNION ALL
+        SELECT
+            5        AS id
+          , 259  AS a
+        FROM
+            dual
+        UNION ALL
+        SELECT
+            6        AS id
+          , 3610  AS a
+        FROM
+            dual
+        UNION ALL
+        SELECT
+            7          AS id
+          , 4711  AS a
+        FROM
+            dual
+        UNION ALL
+        SELECT
+            8        AS id
+          , 5812  AS a
+        FROM
+            dual    
     ), create_order_date AS (
         SELECT 
         1 as id,
@@ -125,11 +176,13 @@ INSERT INTO t_sa_orders
             TO_CHAR(TO_DATE('01-01-2020','dd-mm-yyyy'),'J'),
              TO_CHAR(TO_DATE('01-01-2022','dd-mm-yyyy'),'J'))),'J') as a
         FROM DUAL
-        CONNECT BY level <= 70
+        CONNECT BY level <= 40
     ), cte_gen AS (
         SELECT
             a.*
-          , trunc(dbms_random.value(1, 13))           AS id_pn
+          , trunc(dbms_random.value(1, 8))           AS id_region
+          , trunc(dbms_random.value(8, 150))         AS id_emloyees
+          , trunc(dbms_random.value(1, 13))          AS id_pn
           , trunc(dbms_random.value(100, 600))       AS price
           , trunc(dbms_random.value(1, 2))           AS id_status
           , trunc(dbms_random.value(1, 1))           AS order_date
@@ -140,18 +193,22 @@ INSERT INTO t_sa_orders
                 FROM
                     dual
                 CONNECT BY
-                    level <= 15
+                    level <= 30
             ) a
     )
     SELECT
-        pn.a
+        rid.a
+      , id_emloyees 
+      , rn AS client_id
+      , pn.a
       , price
       , st.a
       , od.a
       , TO_DATE(od.a + trunc(dbms_random.value(7, 25)))
     FROM
         cte_gen  g
+        LEFT OUTER JOIN create_region_id     rid ON g.id_region = rid.id
         LEFT OUTER JOIN create_product_name   pn ON g.id_pn = pn.id
         LEFT OUTER JOIN create_order_status   st ON g.id_status = st.id
-        LEFT OUTER JOIN create_order_date   od  ON g.order_date = od.id;
+        LEFT OUTER JOIN create_order_date     od ON g.order_date = od.id;
    

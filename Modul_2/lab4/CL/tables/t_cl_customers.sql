@@ -2,7 +2,6 @@ alter session set current_schema=DW_CL;
 drop table t_cl_customers;
 
 alter session set current_schema=DW_CL;
-
 Create table t_cl_customers (       
 client_name                   VARCHAR2(15)     not null,
 client_surname                VARCHAR2(15)     not null,
