@@ -54,7 +54,7 @@ INSERT INTO t_sa_paybacks
                 FROM
                     dual
                 CONNECT BY
-                    level <= 250
+                    level <= 20000
             ) a
     )
     SELECT
@@ -67,4 +67,5 @@ INSERT INTO t_sa_paybacks
     FROM
         cte_gen ctg
         LEFT OUTER JOIN create_unexpected_expenses   un_exp ON ctg.id_unexpected_expenses = un_exp.id;
+  
    
