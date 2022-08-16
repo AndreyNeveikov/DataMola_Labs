@@ -61,7 +61,7 @@ AS
                         DW_DATA.t_dw_financial_calendar calen
                      ON (source_cl.date_id=calen.date_id)
                      INNER JOIN 
-                        DW_DATA.t_dw_regions reg
+                       DW_DATA.t_dw_regions reg
                      ON (source_cl.region_id=reg.region_id)
                      INNER JOIN 
                         DW_DATA.t_dw_employees emp
