@@ -1,8 +1,5 @@
 alter session set current_schema=DW_DATA;
 
-
-ALTER TABLE DW_DATA.t_dw_fct_orders
-   DROP CONSTRAINT fk_t_dw_customers_t_dw_orders;
  ------------------------------------------------------------------------  
 ALTER TABLE DW_DATA.t_dw_fct_orders
    DROP CONSTRAINT fk_t_dw_doers_t_dw_fct_orders;
@@ -11,9 +8,7 @@ ALTER TABLE DW_DATA.t_dw_fct_orders
    ADD CONSTRAINT fk_t_dw_doers_t_dw_fct_orders FOREIGN KEY (doer_id)
       REFERENCES DW_DATA.t_dw_doers (doer_id); /*We need to drop it to lab5 task1*/
 -------------------------------------------------------------------------   
-ALTER TABLE DW_DATA.t_dw_fct_orders
-   DROP CONSTRAINT fk_t_dw_regions_t_dw_fct_orders;
- -------------------------------------------------------------------------  
+ 
 ALTER TABLE DW_DATA.t_dw_fct_orders
    DROP CONSTRAINT fk_t_dw_currencies_t_dw_fct_orders;
    
@@ -21,6 +16,11 @@ ALTER TABLE DW_DATA.t_dw_fct_orders
    ADD CONSTRAINT fk_t_dw_currencies_t_dw_fct_orders FOREIGN KEY (currency_id)
       REFERENCES DW_DATA.t_dw_currencies (currency_id); /*We need to drop it to lab5 task1*/
 --------------------------------------------------------------------------
+
+ALTER TABLE DW_DATA.t_dw_fct_orders
+   DROP CONSTRAINT fk_t_dw_regions_t_dw_fct_orders;
+ALTER TABLE DW_DATA.t_dw_fct_orders
+   DROP CONSTRAINT fk_t_dw_customers_t_dw_orders;
 ALTER TABLE DW_DATA.t_dw_fct_orders
    DROP CONSTRAINT fk_t_dw_financial_calendar_t_dw_fct_orders CASCADE;
 ALTER TABLE DW_DATA.t_dw_fct_orders
