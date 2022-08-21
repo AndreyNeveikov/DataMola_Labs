@@ -1,5 +1,5 @@
 alter session set current_schema=DW_CL;
-GRANT SELECT ON DW_CL.t_cl_transactions TO DW_DATA;
+GRANT SELECT ON DW_CL.t_cl_orders TO DW_DATA;
 
 alter session set current_schema = DW_DATA;
 
@@ -47,22 +47,22 @@ AS
               , source_cl.order_date
               , source_cl.receiving_date
 	          FROM (SELECT DISTINCT *
-                           FROM DW_CL.t_cl_transactions) source_cl
+                           FROM DW_CL.t_cl_orders) source_cl
                      INNER JOIN 
                         DW_DATA.t_dw_customers cl
                      ON (source_cl.client_id=cl.client_id)
                      INNER JOIN 
-                        DW_DATA.t_dw_doers dr
-                     ON (source_cl.doer_id=dr.doer_id)
-                     INNER JOIN
-                        DW_DATA.t_dw_currencies cur
-                     ON (source_cl.currency_code=cur.currency_code)
-                     INNER JOIN 
-                        DW_DATA.t_dw_financial_calendar calen
-                     ON (source_cl.date_id=calen.date_id)
-                     INNER JOIN 
                        DW_DATA.t_dw_regions reg
                      ON (source_cl.region_id=reg.region_id)
+                     INNER JOIN 
+                        DW_DATA.t_dw_doers dr
+                     ON (cl.client_id=dr.doer_id)
+                     INNER JOIN
+                        DW_DATA.t_dw_currencies cur
+                     ON trunc(reg.region_id/100) = trunc(cur.currency_code/100)
+                     INNER JOIN 
+                        DW_DATA.t_dw_financial_calendar calen
+                     ON (source_cl.order_date=calen.date_id)
                      INNER JOIN 
                         DW_DATA.t_dw_employees emp
                      ON (source_cl.employee_id=emp.employee_id)
@@ -125,6 +125,8 @@ END pkg_etl_dw_fct_orders;
 
 alter session set current_schema=DW_DATA;
 exec pkg_etl_dw_fct_orders.LOAD_DW_FCT_ORDERS;
-select * from t_dw_fct_orders;
+select count(*) from t_dw_fct_orders;
+
+truncate table t_dw_fct_orders;
 
 commit;

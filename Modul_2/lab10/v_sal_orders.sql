@@ -30,7 +30,10 @@ end;
 
 EXPLAIN PLAN FOR
 print rc;
-select * from table(dbms_xplan.display );
+select * from table(dbms_xplan.display )
+
+select * from table(dbms_xplan.display_cursor(sql_id=>'84wm67123p3gb', format=>'ALLSTATS LAST'));
+;
 
 CREATE OR REPLACE VIEW v_sal_orders
 AS SELECT product_name, order_status, order_date,  sum(order_price) profit,

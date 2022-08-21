@@ -54,7 +54,7 @@ INSERT INTO t_sa_paybacks
                 FROM
                     dual
                 CONNECT BY
-                    level <= 20000
+                    level <= 200000
             ) a
     )
     SELECT

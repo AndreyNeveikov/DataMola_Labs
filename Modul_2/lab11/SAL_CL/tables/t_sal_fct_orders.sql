@@ -27,7 +27,7 @@ receiving_date                DATE             not null
 );
 
 select *
- from t_sal_fct_orders partition (orders_2020);
+ from t_sal_fct_orders;
 
 alter session set current_schema=SAL_CL;
 ALTER TABLE t_sal_fct_orders MERGE PARTITIONS orders_1_half_2020, orders_2_half_2020

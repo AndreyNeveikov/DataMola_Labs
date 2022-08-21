@@ -198,9 +198,9 @@ INSERT INTO t_sa_regions
     ), cte_gen AS (
         SELECT
             a.*
-          , trunc(dbms_random.value(1, 5))           AS id_region
-          , trunc(dbms_random.value(1, 8))           AS id_country
-          , trunc(dbms_random.value(1, 12))          AS id_city
+          , trunc(dbms_random.value(1, 6))           AS id_region
+          , trunc(dbms_random.value(1, 9))           AS id_country
+          , trunc(dbms_random.value(1, 13))          AS id_city
         FROM
             (
                 SELECT
@@ -208,7 +208,7 @@ INSERT INTO t_sa_regions
                 FROM
                     dual
                 CONNECT BY
-                    level <= 1000
+                    level <= 10000
             ) a
     )
     SELECT
@@ -227,6 +227,7 @@ INSERT INTO t_sa_regions
     WHERE concat(concat(id_region, id_country), id_city) IN 
             (111, 112, 123, 124, 125, 136, 137, 248, 259, 3610, 4711, 5812);
 
-   
+
+alter session set current_schema=SA_ORDERS;   
 select *
 from t_sa_regions;

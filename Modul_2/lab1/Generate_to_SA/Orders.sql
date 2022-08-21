@@ -176,11 +176,11 @@ INSERT INTO t_sa_orders
             TO_CHAR(TO_DATE('01-01-2020','dd-mm-yyyy'),'J'),
              TO_CHAR(TO_DATE('01-01-2022','dd-mm-yyyy'),'J'))),'J') as a
         FROM DUAL
-        CONNECT BY level <= 40
+        CONNECT BY level <= 1000
     ), cte_gen AS (
         SELECT
             a.*
-          , trunc(dbms_random.value(1, 8))           AS id_region
+          , trunc(dbms_random.value(1, 9))           AS id_region
           , trunc(dbms_random.value(8, 150))         AS id_emloyees
           , trunc(dbms_random.value(1, 13))          AS id_pn
           , trunc(dbms_random.value(100, 600))       AS price
@@ -193,7 +193,7 @@ INSERT INTO t_sa_orders
                 FROM
                     dual
                 CONNECT BY
-                    level <= 30
+                    level <= 200
             ) a
     )
     SELECT
