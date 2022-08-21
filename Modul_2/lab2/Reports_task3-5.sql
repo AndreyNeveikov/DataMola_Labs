@@ -1,5 +1,5 @@
 /*TASK_3*/
-
+EXPLAIN PLAN FOR
 SELECT product_name, client_address, order_date,  sum(order_price) profit,
 
    GROUPING(product_name) name_,
@@ -15,10 +15,10 @@ SELECT product_name, client_address, order_date,  sum(order_price) profit,
    GROUPING_ID(client_address, order_date, product_name) address_date_name,
    GROUPING_ID(order_date, product_name, client_address) date_name_address
    
-   FROM SA_ORDERS.t_sa_transactions
-   WHERE date_id  >= TO_DATE( '01.01.20', 'MM/DD/YY' ) AND date_id  < TO_DATE( '01.03.20', 'MM/DD/YY' )
+   FROM DW_CL.t_cl_transactions
+   WHERE date_id  >= TO_DATE( '03.01.20', 'MM/DD/YY' ) AND date_id  < TO_DATE( '04.01.20', 'MM/DD/YY' )
    GROUP BY CUBE(product_name, client_address, order_date);
-
+        select * from table(dbms_xplan.display );
 ---------------------------------------------------------------------------------------------------------   
    
 SELECT product_name, order_date, receiving_date, round(AVG(order_price), 1) avg_profit,

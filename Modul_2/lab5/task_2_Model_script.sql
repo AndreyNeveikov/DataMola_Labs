@@ -5,7 +5,7 @@ as
 select t.*, 1 countt
 from
 DW_CL.t_cl_financial_calendar t
-WHERE date_id >= TO_DATE( '01.03.20', 'MM/DD/YY' ) AND date_id  < TO_DATE( '01.10.20', 'MM/DD/YY' )
+WHERE date_id >= TO_DATE( '03.01.20', 'MM/DD/YY' ) AND date_id  < TO_DATE( '04.01.20', 'MM/DD/YY' )
 )
 
 SELECT date_id, day_name, day_number_in_week
@@ -20,7 +20,6 @@ measures(day_number_in_week)
 rules automatic order(
             day_number_in_week[null] = count(day_number_in_week)[any]
                     );
-                    
                     
 --------------------------------------------------------------------------------
 /*Task_2*/
@@ -47,4 +46,4 @@ rules automatic order(
             order_price[null, for order_date in (select distinct order_date from tmp_table)] = count(order_price)[any, CV(order_date)] -1
                     )
 ORDER BY product_name, order_date;
-
+         

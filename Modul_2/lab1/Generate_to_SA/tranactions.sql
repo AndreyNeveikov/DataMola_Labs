@@ -43,7 +43,7 @@ days_in_fin_month             VARCHAR2(2)  ,
 end_of_fin_month              DATE         ,
 end_of_fin_quarter            VARCHAR2(32) ,
 fin_quarter_number            VARCHAR2(1)  , 
-fin_year                 VARCHAR2(4)  ,  
+fin_year                      VARCHAR2(4)  ,  
 days_in_cal_year              NUMBER            
 );
 
