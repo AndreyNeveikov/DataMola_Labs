@@ -1,23 +1,23 @@
 /*TASK_3*/
 EXPLAIN PLAN FOR
-SELECT product_name, client_address, order_date,  sum(order_price) profit,
+SELECT  product_name, order_status, order_date,  sum(order_price) profit,
 
    GROUPING(product_name) name_,
-   GROUPING(client_address) address,
+   GROUPING(order_status) status,
    GROUPING(order_date) date_,
    
-   GROUPING_ID(product_name, client_address) name_address,
-   GROUPING_ID(client_address, product_name) address_name,
+   GROUPING_ID(product_name, order_status) name_status,
+   GROUPING_ID(order_status, product_name) status_name,
    GROUPING_ID(product_name, order_date) name_date,
-   GROUPING_ID(client_address, order_date) address_date,
+   GROUPING_ID(order_status, order_date) status_date,
    
-   GROUPING_ID(client_address, product_name, order_date) address_name_date,
-   GROUPING_ID(client_address, order_date, product_name) address_date_name,
-   GROUPING_ID(order_date, product_name, client_address) date_name_address
+   GROUPING_ID(order_status, product_name, order_date) status_name_date,
+   GROUPING_ID(order_status, order_date, product_name) status_date_name,
+   GROUPING_ID(order_date, product_name, order_status) date_name_status
    
-   FROM DW_CL.t_cl_transactions
-   WHERE date_id  >= TO_DATE( '03.01.20', 'MM/DD/YY' ) AND date_id  < TO_DATE( '04.01.20', 'MM/DD/YY' )
-   GROUP BY CUBE(product_name, client_address, order_date);
+   FROM SA_ORDERS.t_sa_orders fct_ord
+   WHERE (order_date  >= TO_DATE( '03.01.20', 'MM/DD/YY' ) AND order_date  < TO_DATE( '04.01.20', 'MM/DD/YY' )) AND order_status = 'Accepted'
+   GROUP BY CUBE(product_name, order_status, order_date);
         select * from table(dbms_xplan.display );
 ---------------------------------------------------------------------------------------------------------   
    

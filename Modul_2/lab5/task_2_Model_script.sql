@@ -23,6 +23,7 @@ rules automatic order(
                     
 --------------------------------------------------------------------------------
 /*Task_2*/
+EXPLAIN PLAN FOR
 with tmp_table
 as 
 (
@@ -46,4 +47,5 @@ rules automatic order(
             order_price[null, for order_date in (select distinct order_date from tmp_table)] = count(order_price)[any, CV(order_date)] -1
                     )
 ORDER BY product_name, order_date;
+select * from table(dbms_xplan.display );
          

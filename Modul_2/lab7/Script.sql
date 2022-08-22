@@ -121,13 +121,14 @@ REFRESH COMPLETE ON COMMIT
 ENABLE QUERY REWRITE
 AS
 SELECT product_name, client_address, order_date,  sum(order_price) profit
-   FROM DW_DATA.t_dw_transactions
+   FROM DW_DATA.t_dw_fct_orders ord--1046
+   INNER JOIN DW_DATA.t_dw_customers cust ON cust.client_id = ord.client_id  
    GROUP BY product_name, client_address, order_date;
 
 SELECT * FROM mv_profit_daily
 ORDER BY 3,1;
 
-UPDATE DW_DATA.t_dw_transactions
+UPDATE DW_DATA.t_dw_fct_orders
 SET order_price = order_price*2
 WHERE PRODUCT_NAME = 'Computer';
 
@@ -150,8 +151,8 @@ as
 (
 select t.product_name, t.order_date, t.order_price, emp.employee_id, 1 countt
 from
-DW_CL.t_cl_orders t
-INNER JOIN DW_CL.t_cl_employees emp ON emp.employee_id = t.employee_id
+DW_DATA.t_dw_fct_orders t
+INNER JOIN DW_DATA.t_dw_employees emp ON emp.employee_id = t.employee_id
 WHERE order_date >= TO_DATE( '01.03.20', 'MM/DD/YY' ) AND order_date  < TO_DATE( '03.10.20', 'MM/DD/YY' )
 )
 
@@ -171,6 +172,6 @@ ORDER BY product_name, order_date;
 
 SELECT * FROM DW_DATA.mv_orders_daily;
 
-UPDATE DW_CL.t_cl_orders
+UPDATE DW_DATA.t_dw_fct_orders
 SET order_price = order_price/10
 WHERE PRODUCT_NAME = 'Air-conditioner';

@@ -1,5 +1,5 @@
 alter session set current_schema=SAL_CL;
-drop view v_sal_orders;
+drop view dim_sal_orders;
 
 alter session set current_schema=SAL_CL;
 GRANT SELECT ON DW_DATA.t_dw_fct_orders TO SAL_CL;
@@ -35,7 +35,7 @@ select * from table(dbms_xplan.display )
 select * from table(dbms_xplan.display_cursor(sql_id=>'84wm67123p3gb', format=>'ALLSTATS LAST'));
 ;
 
-CREATE OR REPLACE VIEW v_sal_orders
+CREATE OR REPLACE VIEW dim_sal_orders
 AS SELECT product_name, order_status, order_date,  sum(order_price) profit,
 
    GROUPING(product_name) name_,
@@ -58,5 +58,5 @@ AS SELECT product_name, order_status, order_date,  sum(order_price) profit,
     
 alter session set current_schema=SAL_CL;
 EXPLAIN PLAN FOR
-SELECT * FROM v_sal_orders;
+SELECT count(*) FROM dim_sal_orders;
     select * from table(dbms_xplan.display );

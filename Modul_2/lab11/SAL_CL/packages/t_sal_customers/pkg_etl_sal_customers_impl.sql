@@ -46,6 +46,6 @@ END pkg_etl_sal_customers;
 
 alter session set current_schema=SAL_CL;
 exec pkg_etl_sal_customers.LOAD_SAL_CUSTOMERS;
-select * from t_sal_customers;
+select count(*) from t_sal_customers;
 
 commit;

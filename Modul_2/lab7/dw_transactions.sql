@@ -164,12 +164,11 @@ days_in_cal_year
     DW_DATA.t_dw_fct_orders ord--1046
  INNER JOIN DW_DATA.t_dw_customers cust ON cust.client_id = ord.client_id    
  INNER JOIN DW_DATA.t_dw_employees emp ON emp.employee_id = ord.employee_id   
- INNER JOIN DW_DATA.t_dw_doers doer ON doer.doer_id = emp.employee_id  
+ INNER JOIN DW_DATA.t_dw_doers doer ON doer.doer_id = ord.employee_id  
  INNER JOIN DW_DATA.t_dw_paybacks payb ON payb.order_id = ord.order_id  
  INNER JOIN DW_DATA.t_dw_regions reg ON reg.region_id = ord.region_id 
- INNER JOIN DW_DATA.t_dw_currencies cur ON trunc(cur.currency_code/100) = trunc(reg.region_id/100) 
- INNER JOIN DW_DATA.t_dw_financial_calendar fin_c ON fin_c.date_id = ord.order_date 
-WHERE order_date > TO_DATE( '01.01.20', 'MM/DD/YY' ) AND order_date < TO_DATE( '04.01.22', 'MM/DD/YY' )
+ INNER JOIN DW_DATA.t_dw_currencies cur ON cur.currency_id = ord.currency_id 
+ INNER JOIN DW_DATA.t_dw_financial_calendar fin_c ON fin_c.date_id = ord.date_id
 ); 
 
 SELECT *
