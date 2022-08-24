@@ -30,3 +30,6 @@ from t_dw_fct_orders;
 
 SELECT *
 from t_dw_employees;
+
+SELECT * 
+from t_dw_employees;
