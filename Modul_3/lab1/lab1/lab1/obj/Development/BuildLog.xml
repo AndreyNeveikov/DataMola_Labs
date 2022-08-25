@@ -2,7 +2,7 @@
 <BuildLog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <ProjectInfo>
     <Name>lab1</Name>
-    <LastWriteTime>2022-08-25T09:10:14.459532Z</LastWriteTime>
+    <LastWriteTime>2022-08-25T10:38:47.3467349Z</LastWriteTime>
     <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
   </ProjectInfo>
   <LastBuildInfos>
@@ -14,6 +14,11 @@
     <ProjectBuildItemInfo>
       <Name>Currency.dtsx</Name>
       <LastWriteTime>2022-08-25T09:10:14.1711456Z</LastWriteTime>
+      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+    <ProjectBuildItemInfo>
+      <Name>Currency_task3.dtsx</Name>
+      <LastWriteTime>2022-08-25T10:38:47.2988634Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
   </LastBuildInfos>
