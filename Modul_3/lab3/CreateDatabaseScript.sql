@@ -64,6 +64,7 @@ CREATE TABLE dbo.EmailAddressesAW (
  );
  --DROP TABLE dbo.EmailAddressesAW;
 
+
  Select * from dbo.EmployeesExternal;
  Select * from dbo.EmployeesAW;
  Select * from dbo.EmailAddressesAW;
@@ -78,8 +79,8 @@ USE AdventureWorks2012
 
 
  -- dbo.EmployeesExternal
- SELECT 
-    e.[BusinessEntityID]
+SELECT 
+    e.[BusinessEntityID] as [EmployeeID]
     ,p.[FirstName]
     ,p.[LastName]
     ,e.[JobTitle]  
@@ -107,7 +108,7 @@ FROM [HumanResources].[Employee] e
     order by p.[BusinessEntityID] asc;
 
 
--- dbo.EmailAddressesAW;
+-- dbo.EmployeesAW;
  select p.[BusinessEntityID],[FirstName],[LastName],[JobTitle]
  from [Person].[Person] p
  inner join [HumanResources].[Employee] e
