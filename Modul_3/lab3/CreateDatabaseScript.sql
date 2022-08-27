@@ -64,6 +64,10 @@ CREATE TABLE dbo.EmailAddressesAW (
  );
  --DROP TABLE dbo.EmailAddressesAW;
 
+ truncate table dbo.EmployeesExternal;
+ truncate table dbo.EmployeesAW;
+ truncate table dbo.EmailAddressesAW;
+
 
  Select * from dbo.EmployeesExternal;
  Select * from dbo.EmployeesAW;
