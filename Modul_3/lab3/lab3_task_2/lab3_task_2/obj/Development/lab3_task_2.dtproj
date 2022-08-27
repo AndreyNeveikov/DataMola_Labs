@@ -26,7 +26,7 @@
           <SSIS:Property SSIS:Name="CreatorComputerName">USER-PC</SSIS:Property>
           <SSIS:Property SSIS:Name="Description">
           </SSIS:Property>
-          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAqntiPKAH4kmrlJXgJ/YAKgAAAAACAAAAAAAQZgAAAAEAACAAAAAp0oRQgm8XVR+IVXK+GSwwwRR/cPB5kScMjzeHz8qYKgAAAAAOgAAAAAIAACAAAAAABdu6J2BETw/4d9DaHZbb8yP6Z8cKz6Vbam6Ht7W74pAAAACRTS7hPbKB1pjn1k2VL+v9/ULihjuGt4Scc5rJgzLcFRDqgEno9aX3E/0nQS8GFsPSnrWQhHwAg7MO4OanbtQ1XQON6yQUtF/y+xbM0uXyN5TI5HCbag643oJsPYX1zPJwH4fjkmkVB4yBdjy1skl7eDH1gGcT9jNsk1AvK9fzUHSMAEBY8zSZJ6VpvGboTs1AAAAA/hKFjtCXB/jppCkLPRn6w7RpspKDLH7p4P8jfHHIHotv+qWCQ+QNStGaimSvaKKgO7goQLPYZT6/k49inVemgw==</SSIS:Property>
+          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAqntiPKAH4kmrlJXgJ/YAKgAAAAACAAAAAAAQZgAAAAEAACAAAAAwl5zLb1CQPlyvyqzK5VgT8XA8p7wER9Y9lPeFOXEfXwAAAAAOgAAAAAIAACAAAAA7f14gBovtqD6xvaG1AYgTNMGc0impcyobScwfRg7uhpAAAABVR+3RD12FQ7ir0qHKdfMoSUkAWPyMOOfAAen7+LoFWjEsSwtUWVE5I+kLzY8kKsk5oQhr91idOa1UvJ0etxdfjFbw0ldld15WN1m4+B8BX8lNYYV40QJN8UWeuV3OtjPVGij/lTqQohi2bUMMlSn0qqw7J/RDmiiYFfB0l+TmJzXmaceHzP0JJ3s6jBUj/CVAAAAAsA8A9U4xzfFPgy6nF3+ePcy49Dm4n7buvyr85OlmjjGqBUGJoRkCIElmY5VJOrjyPGxHgHXoVP16KLNYPRqezQ==</SSIS:Property>
           <SSIS:Property SSIS:Name="FormatVersion">1</SSIS:Property>
         </SSIS:Properties>
         <SSIS:Packages>
@@ -42,10 +42,10 @@
                 <SSIS:Property SSIS:Name="Name">Package1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">5</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">38</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{FFDD911D-A6AB-4853-B7E4-2B06BB792BBF}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{B0C9D288-075E-4944-8F2D-A5FF6A4EB871}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">DTS Wizard-generated package</SSIS:Property>
                 <SSIS:Property SSIS:Name="ProtectionLevel">1</SSIS:Property>
@@ -258,21 +258,6 @@
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Value">false</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">3</SSIS:Property>
-                  </SSIS:Properties>
-                </SSIS:Parameter>
-                <SSIS:Parameter SSIS:Name="CM.SourceConnectionFlatFile.ConnectionString">
-                  <SSIS:Properties>
-                    <SSIS:Property SSIS:Name="ID">
-                    </SSIS:Property>
-                    <SSIS:Property SSIS:Name="CreationName">
-                    </SSIS:Property>
-                    <SSIS:Property SSIS:Name="Description">
-                    </SSIS:Property>
-                    <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">E:\Git_repositories\DataMola_Labs\Modul_3\lab3\EmployeesExternal.txt</SSIS:Property>
-                    <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
                 <SSIS:Parameter SSIS:Name="CM.SourceConnectionFlatFile.DataRowsToSkip">

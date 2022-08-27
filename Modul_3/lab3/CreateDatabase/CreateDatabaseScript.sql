@@ -74,6 +74,7 @@ CREATE TABLE dbo.EmailAddressesAW (
  Select * from dbo.EmailAddressesAW;
 
 
+truncate table dbo.EmployeesExternal;truncate table dbo.EmployeesAW;truncate table dbo.EmailAddressesAW;
  -------------------------------------------------------------------------------------------------------------------
 /*Task_2*/
 
@@ -123,5 +124,4 @@ FROM [HumanResources].[Employee] e
  select [EmailAddressID],p.[BusinessEntityID],[EmailAddress]
  from [Person].[EmailAddress] e
  inner join [Person].[Person] p
-	on e.[BusinessEntityID] = p.BusinessEntityID
- where p.[BusinessEntityID] < 291
+	on e.[BusinessEntityID] = p.BusinessEntityID;
