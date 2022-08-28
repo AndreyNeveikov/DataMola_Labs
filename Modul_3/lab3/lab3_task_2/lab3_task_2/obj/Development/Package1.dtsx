@@ -13,8 +13,13 @@
   DTS:MaxErrorCount="0"
   DTS:ObjectName="Package1"
 <<<<<<< HEAD
+<<<<<<< HEAD
   DTS:VersionBuild="43"
   DTS:VersionGUID="{1AFEED23-90DB-430B-A0FC-D1F40F682E62}">
+=======
+  DTS:VersionBuild="38"
+  DTS:VersionGUID="{B0C9D288-075E-4944-8F2D-A5FF6A4EB871}">
+>>>>>>> parent of 8aa1cee (lab3 all tasks done)
 =======
   DTS:VersionBuild="38"
   DTS:VersionGUID="{B0C9D288-075E-4944-8F2D-A5FF6A4EB871}">
@@ -1573,7 +1578,10 @@
                       ReadWriteVariables="User::Failure">
                       <ProjectItem
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> parent of 8aa1cee (lab3 all tasks done)
                         Name="Properties\Settings.settings"
                         Encoding="UTF8"><![CDATA[<?xml version='1.0' encoding='iso-8859-1'?>
 <SettingsFile xmlns="uri:settings" CurrentProfile="(Default)">
@@ -2281,7 +2289,10 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
                       ReadOnlyVariables="User::EmailFrom,User::EmailTo,User::Subject,User::Success">
                       <ProjectItem
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> parent of 8aa1cee (lab3 all tasks done)
                         Name="Properties\Settings.settings"
                         Encoding="UTF8"><![CDATA[<?xml version='1.0' encoding='iso-8859-1'?>
 <SettingsFile xmlns="uri:settings" CurrentProfile="(Default)">
