@@ -12,8 +12,13 @@
   DTS:LocaleID="1049"
   DTS:MaxErrorCount="0"
   DTS:ObjectName="Package1"
+<<<<<<< HEAD
   DTS:VersionBuild="43"
   DTS:VersionGUID="{1AFEED23-90DB-430B-A0FC-D1F40F682E62}">
+=======
+  DTS:VersionBuild="38"
+  DTS:VersionGUID="{B0C9D288-075E-4944-8F2D-A5FF6A4EB871}">
+>>>>>>> parent of 8aa1cee (lab3 all tasks done)
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -1567,6 +1572,18 @@
                       Language="CSharp"
                       ReadWriteVariables="User::Failure">
                       <ProjectItem
+<<<<<<< HEAD
+=======
+                        Name="Properties\Settings.settings"
+                        Encoding="UTF8"><![CDATA[<?xml version='1.0' encoding='iso-8859-1'?>
+<SettingsFile xmlns="uri:settings" CurrentProfile="(Default)">
+  <Profiles>
+    <Profile Name="(Default)" />
+  </Profiles>
+  <Settings />
+</SettingsFile>]]></ProjectItem>
+                      <ProjectItem
+>>>>>>> parent of 8aa1cee (lab3 all tasks done)
                         Name="Properties\Resources.resx"
                         Encoding="UTF8"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
 <root>
@@ -1997,14 +2014,35 @@ using System.Runtime.CompilerServices;
 
 [assembly: AssemblyVersion("1.0.*")]]]></ProjectItem>
                       <ProjectItem
-                        Name="Properties\Settings.settings"
-                        Encoding="UTF8"><![CDATA[<?xml version='1.0' encoding='iso-8859-1'?>
-<SettingsFile xmlns="uri:settings" CurrentProfile="(Default)">
-  <Profiles>
-    <Profile Name="(Default)" />
-  </Profiles>
-  <Settings />
-</SettingsFile>]]></ProjectItem>
+                        Name="Properties\AssemblyInfo.cs"
+                        Encoding="UTF8"><![CDATA[using System.Reflection;
+using System.Runtime.CompilerServices;
+
+//
+// General Information about an assembly is controlled through the following 
+// set of attributes. Change these attribute values to modify the information
+// associated with an assembly.
+//
+[assembly: AssemblyTitle("ST_0c15ba4d18ab4b5a8927c265e2e94b51")]
+[assembly: AssemblyDescription("")]
+[assembly: AssemblyConfiguration("")]
+[assembly: AssemblyCompany("")]
+[assembly: AssemblyProduct("ST_0c15ba4d18ab4b5a8927c265e2e94b51")]
+[assembly: AssemblyCopyright("Copyright @  2022")]
+[assembly: AssemblyTrademark("")]
+[assembly: AssemblyCulture("")]
+//
+// Version information for an assembly consists of the following four values:
+//
+//      Major Version
+//      Minor Version 
+//      Build Number
+//      Revision
+//
+// You can specify all the values or you can default the Revision and Build Numbers 
+// by using the '*' as shown below:
+
+[assembly: AssemblyVersion("1.0.*")]]]></ProjectItem>
                       <ProjectItem
                         Name="Properties\Resources.Designer.cs"
                         Encoding="UTF8"><![CDATA[//------------------------------------------------------------------------------
@@ -2242,6 +2280,18 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
                       Language="CSharp"
                       ReadOnlyVariables="User::EmailFrom,User::EmailTo,User::Subject,User::Success">
                       <ProjectItem
+<<<<<<< HEAD
+=======
+                        Name="Properties\Settings.settings"
+                        Encoding="UTF8"><![CDATA[<?xml version='1.0' encoding='iso-8859-1'?>
+<SettingsFile xmlns="uri:settings" CurrentProfile="(Default)">
+  <Profiles>
+    <Profile Name="(Default)" />
+  </Profiles>
+  <Settings />
+</SettingsFile>]]></ProjectItem>
+                      <ProjectItem
+>>>>>>> parent of 8aa1cee (lab3 all tasks done)
                         Name="Properties\Resources.resx"
                         Encoding="UTF8"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
 <root>
@@ -2669,14 +2719,35 @@ using System.Runtime.CompilerServices;
   </ProjectExtensions>
 </Project>]]></ProjectItem>
                       <ProjectItem
-                        Name="Properties\Settings.settings"
-                        Encoding="UTF8"><![CDATA[<?xml version='1.0' encoding='iso-8859-1'?>
-<SettingsFile xmlns="uri:settings" CurrentProfile="(Default)">
-  <Profiles>
-    <Profile Name="(Default)" />
-  </Profiles>
-  <Settings />
-</SettingsFile>]]></ProjectItem>
+                        Name="Properties\AssemblyInfo.cs"
+                        Encoding="UTF8"><![CDATA[using System.Reflection;
+using System.Runtime.CompilerServices;
+
+//
+// General Information about an assembly is controlled through the following 
+// set of attributes. Change these attribute values to modify the information
+// associated with an assembly.
+//
+[assembly: AssemblyTitle("ST_3490fdbba0bf493e8638b2d5c65e5bde")]
+[assembly: AssemblyDescription("")]
+[assembly: AssemblyConfiguration("")]
+[assembly: AssemblyCompany("")]
+[assembly: AssemblyProduct("ST_3490fdbba0bf493e8638b2d5c65e5bde")]
+[assembly: AssemblyCopyright("Copyright @  2022")]
+[assembly: AssemblyTrademark("")]
+[assembly: AssemblyCulture("")]
+//
+// Version information for an assembly consists of the following four values:
+//
+//      Major Version
+//      Minor Version 
+//      Build Number
+//      Revision
+//
+// You can specify all the values or you can default the Revision and Build Numbers 
+// by using the '*' as shown below:
+
+[assembly: AssemblyVersion("1.0.*")]]]></ProjectItem>
                       <ProjectItem
                         Name="Properties\Resources.Designer.cs"
                         Encoding="UTF8"><![CDATA[//------------------------------------------------------------------------------
@@ -2970,15 +3041,15 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
         <NodeLayout
           Size="170.4,41.6"
           Id="Package\Контейнер последовательности\EmailAddressesAW"
-          TopLeft="372.366642460559,281.000003326734" />
+          TopLeft="379.033308862316,304.400003512701" />
         <NodeLayout
           Size="146.4,41.6"
           Id="Package\Контейнер последовательности\EmployeesAW"
-          TopLeft="387.366641864513,164.866669070456" />
+          TopLeft="394.03330826627,188.266669256423" />
         <NodeLayout
           Size="146.4,41.6"
           Id="Package\Контейнер последовательности\truncate tables"
-          TopLeft="100.499996225039,10.76179559741" />
+          TopLeft="107.166662626796,34.1617957833766" />
         <NodeLayout
           Size="168,41.6"
           Id="Package\Контейнер последовательности\Контейнер &quot;Цикл по каждому элементу&quot;\EmployeesExternal"
@@ -2989,10 +3060,32 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
           PanelSize="298.4,144.8"
           Size="298.4,188"
           Id="Package\Контейнер последовательности\Контейнер &quot;Цикл по каждому элементу&quot;"
-          TopLeft="52.3666551762161,102.733334690199" />
+          TopLeft="59.0333215779733,126.133334876166" />
+        <EdgeLayout
+          Id="Package\Контейнер последовательности.PrecedenceConstraints[Constraint 1]"
+          TopLeft="465.733308564293,229.866669256423">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,74.5333342562781"
+              Start="0,0"
+              End="0,67.0333342562781">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,67.0333342562781" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
         <EdgeLayout
           Id="Package\Контейнер последовательности.PrecedenceConstraints[Constraint]"
-          TopLeft="173.699996225039,52.36179559741">
+          TopLeft="180.366662626796,75.7617957833766">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -3025,36 +3118,14 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Контейнер последовательности.PrecedenceConstraints[Constraint 1]"
-          TopLeft="459.066642162536,206.466669070456">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,74.5333342562781"
-              Start="0,0"
-              End="0,67.0333342562781">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,67.0333342562781" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
           Id="Package\Контейнер последовательности.PrecedenceConstraints[Constraint 2]"
-          TopLeft="350.766655176216,196.733334690199">
+          TopLeft="357.433321577973,220.133334876166">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="36.5999866882968,-11.066665619743"
+              EndConnector="36.5999866882967,-11.066665619743"
               Start="0,0"
-              End="29.0999866882968,-11.066665619743">
+              End="29.0999866882967,-11.066665619743">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
@@ -3065,13 +3136,13 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
                     Point2="18.2999933441484,0"
                     Point3="18.2999933441484,-4" />
                   <mssgle:LineSegment
-                    End="18.2999933441484,-7.06666561974305" />
+                    End="18.2999933441484,-7.06666561974299" />
                   <mssgle:CubicBezierSegment
-                    Point1="18.2999933441484,-7.06666561974305"
+                    Point1="18.2999933441484,-7.06666561974299"
                     Point2="18.2999933441484,-11.066665619743"
                     Point3="22.2999933441484,-11.066665619743" />
                   <mssgle:LineSegment
-                    End="29.0999866882968,-11.066665619743" />
+                    End="29.0999866882967,-11.066665619743" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -3083,8 +3154,8 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="599.2,371.2"
-          Size="599.2,414.4"
+          PanelSize="599.2,527.2"
+          Size="599.2,570.4"
           Id="Package\Контейнер последовательности"
           TopLeft="232.499990761281,66.7333338636822" />
       </GraphLayout>
@@ -3106,7 +3177,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
     design-time-name="Package\Контейнер последовательности\EmailAddressesAW">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="185.6,41.6"
           Id="Package\Контейнер последовательности\EmailAddressesAW\Назначение &quot;OLE DB&quot;"
@@ -3134,7 +3205,9 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -3193,7 +3266,13 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
+<<<<<<< HEAD
             <EdgeLabelCollection />
+=======
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+>>>>>>> parent of 8aa1cee (lab3 all tasks done)
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -3220,35 +3299,11 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
       </Property>
     </Properties>
   </PipelineComponentMetadata>
-  <DtsEventHandler
-    design-time-name="Package\Контейнер последовательности\Контейнер &quot;Цикл по каждому элементу&quot;.EventHandlers[OnPostExecute]">
-    <LayoutInfo>
-      <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
-        <NodeLayout
-          Size="159.2,41.6"
-          Id="Package\Контейнер последовательности\Контейнер &quot;Цикл по каждому элементу&quot;.EventHandlers[OnPostExecute]\Задача &quot;Скрипт&quot;"
-          TopLeft="97,43" />
-      </GraphLayout>
-    </LayoutInfo>
-  </DtsEventHandler>
-  <DtsEventHandler
-    design-time-name="Package\Контейнер последовательности\Контейнер &quot;Цикл по каждому элементу&quot;.EventHandlers[OnError]">
-    <LayoutInfo>
-      <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
-        <NodeLayout
-          Size="159.2,41.6"
-          Id="Package\Контейнер последовательности\Контейнер &quot;Цикл по каждому элементу&quot;.EventHandlers[OnError]\Задача &quot;Скрипт&quot;"
-          TopLeft="50,48" />
-      </GraphLayout>
-    </LayoutInfo>
-  </DtsEventHandler>
   <TaskHost
     design-time-name="Package\Контейнер последовательности\Контейнер &quot;Цикл по каждому элементу&quot;\EmployeesExternal">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="229.6,41.6"
           Id="Package\Контейнер последовательности\Контейнер &quot;Цикл по каждому элементу&quot;\EmployeesExternal\Destination - EmployeesExternal"
@@ -3280,9 +3335,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -3304,9 +3357,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -3325,5 +3376,29 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
       </Property>
     </Properties>
   </PipelineComponentMetadata>
+  <DtsEventHandler
+    design-time-name="Package\Контейнер последовательности\Контейнер &quot;Цикл по каждому элементу&quot;.EventHandlers[OnError]">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="159.2,41.6"
+          Id="Package\Контейнер последовательности\Контейнер &quot;Цикл по каждому элементу&quot;.EventHandlers[OnError]\Задача &quot;Скрипт&quot;"
+          TopLeft="50,48" />
+      </GraphLayout>
+    </LayoutInfo>
+  </DtsEventHandler>
+  <DtsEventHandler
+    design-time-name="Package\Контейнер последовательности\Контейнер &quot;Цикл по каждому элементу&quot;.EventHandlers[OnPostExecute]">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="159.2,41.6"
+          Id="Package\Контейнер последовательности\Контейнер &quot;Цикл по каждому элементу&quot;.EventHandlers[OnPostExecute]\Задача &quot;Скрипт&quot;"
+          TopLeft="97,43" />
+      </GraphLayout>
+    </LayoutInfo>
+  </DtsEventHandler>
 </Objects>]]></DTS:DesignTimeProperties>
 </DTS:Executable>
