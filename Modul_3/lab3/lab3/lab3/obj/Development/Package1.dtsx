@@ -12,7 +12,8 @@
   DTS:LocaleID="1049"
   DTS:MaxErrorCount="0"
   DTS:ObjectName="Package1"
-  DTS:VersionGUID="{2DBABA63-81E6-4C7C-9E76-259185E0472B}">
+  DTS:VersionBuild="1"
+  DTS:VersionGUID="{AEB04854-1311-40D4-B4E6-F3A6F841936E}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -151,12 +152,12 @@
                 <property
                   dataType="System.Boolean"
                   description="Указывает, следует ли перезаписывать данные в целевой файл или добавлять их в его конец."
-                  name="Overwrite">false</property>
+                  name="Overwrite">true</property>
                 <property
-                  dataType="System.String"
+                  dataType="System.Null"
                   description="Задает текст, который записывается в целевой файл перед записью любых данных."
                   expressionType="Notify"
-                  name="Header"></property>
+                  name="Header" />
                 <property
                   dataType="System.Boolean"
                   description="Если ограничитель текста включен, указывает, будут ли добавляться escape-символы для ограничителя в данных, записываемых в конечный файл."
@@ -567,4 +568,62 @@ FROM [HumanResources].[Employee] e
       </DTS:ObjectData>
     </DTS:Executable>
   </DTS:Executables>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="159.2,41.6"
+          Id="Package\Data Flow Task 1"
+          TopLeft="5.5,5.49999999999995" />
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\Data Flow Task 1">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="148.8,41.6"
+          Id="Package\Data Flow Task 1\Source - Query"
+          TopLeft="53.9,5.49999999999995" />
+        <NodeLayout
+          Size="245.6,41.6"
+          Id="Package\Data Flow Task 1\Destination - EmployeesExternal_txt"
+          TopLeft="5.50000000000004,107.1" />
+        <EdgeLayout
+          Id="Package\Data Flow Task 1.Paths[Выход источника &quot;OLE DB&quot;]"
+          TopLeft="128.3,47.1">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60"
+              Start="0,0"
+              End="0,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+</Objects>]]></DTS:DesignTimeProperties>
 </DTS:Executable>
